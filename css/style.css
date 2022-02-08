@@ -6,8 +6,11 @@
   text-decoration: none;
   box-sizing: border-box;
 }
+
+/*genera gradiente lineal en el body*/
 body {
-  background-color: #f22222;
+  /* background-color: #f22222; */
+  background-image: linear-gradient(135deg, #f22222 50%, #f29f04);
 }
 
 /*VISTA MOBILE**************************************************************************************/
@@ -59,18 +62,48 @@ body {
     font-weight: 400;
     word-spacing: 5px;
   }
-  nav a:hover {
+
+  /*acceso cambia de color al precionar click */
+  nav a:active {
     color: #f22222;
   }
-  .logo {
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 15px;
+
+  /*acceso se amplia al pasar el mouse*/
+  nav li:hover {
+    transform: scale(1.5);
+    transition: 1s;
   }
+
   .imgLogo {
     width: 60px;
     height: 60px;
   }
+  
+  /*rotacion animada del logo*/
+  .logo {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 15px;
+    animation-name: movimiento;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+  }
+
+  @keyframes movimiento {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /*pausa animación al pasar el puntero*/
+  .logo:hover {
+    animation-play-state: paused;
+  }
+
   /*ESTILOS DEL INDEX*/
   /* MAIN -- Titulo e imagen de portada--------------------------------------------*/
   .tituloPrincipal {
@@ -188,6 +221,12 @@ body {
     margin-top: 25px;
     margin-bottom: 25px;
     border-radius: 5px;
+  }
+
+  /* amplia fotos de productos 20% con :hover*/
+  .contFotoProduc:hover {
+    transform: scale(1.15);
+    transition: 1.5s;
   }
 
   /* Ajusta tamaño de imagenes de productos */
@@ -451,18 +490,48 @@ body {
     font-weight: 400;
     word-spacing: 5px;
   }
-  nav a:hover {
+
+  /*acceso cambia de color al precionar click */
+  nav a:active {
     color: #f22222;
   }
-  .logo {
-    position: absolute;
-    margin-top: 30px;
-    margin-left: 15px;
+
+  /*acceso se amplia al pasar el mouse*/
+  nav li:hover {
+    transform: scale(1.5);
+    transition: 1s;
   }
+
   .imgLogo {
     width: 100px;
     height: 100px;
   }
+
+  /*rotacion animada del logo*/
+  .logo {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    animation-name: movimiento;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+  }
+
+  @keyframes movimiento {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /*pausa animación al pasar el puntero*/
+  .logo:hover {
+    animation-play-state: paused;
+  }
+
   /*ESTILOS DEL INDEX*/
   /* MAIN -- Titulo e imagen de portada--------------------------------------------*/
   .tituloPrincipal {
@@ -605,6 +674,13 @@ body {
     margin-bottom: 50px;
     border-radius: 5px;
   }
+
+  /* amplia fotos de productos 20% con :hover*/
+  .contFotoProduc:hover {
+    transform: scale(1.2);
+    transition: 1.5s;
+  }
+
   /* Ajusta tamaño de imagenes de productos */
   .imgProducto {
     width: 80%;
@@ -837,19 +913,45 @@ body {
     word-spacing: 5px;
   }
 
-  nav a:hover {
+  /*acceso cambia de color al precionar click */
+  nav a:active {
     color: #f22222;
   }
 
-  .logo {
-    position: absolute;
-    margin-top: 15px;
-    margin-left: 15px;
+  /*acceso se amplia al pasar el mouse*/
+  nav li:hover {
+    transform: scale(1.5);
+    transition: 1s;
   }
 
   .imgLogo {
     width: 120px;
     height: 120px;
+  }
+
+  /*rotacion animada del logo*/
+  .logo {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    animation-name: movimiento;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+  }
+
+  @keyframes movimiento {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /*pausa animación al pasar el puntero*/
+  .logo:hover {
+    animation-play-state: paused;
   }
 
   /*FOOTER DE TODO EL SITIO------------------------------------------------*/
@@ -995,6 +1097,12 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 5px;
+  }
+
+  /* amplia fotos de productos 20% con :hover*/
+  .contFotoProduc:hover {
+    transform: scale(1.2);
+    transition: 1.5s;
   }
 
   /* Titulo mas pequeño aplicado en Productos */
