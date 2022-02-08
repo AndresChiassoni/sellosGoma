@@ -1,6 +1,4 @@
-# sellosGoma
 
- 
 gradientes / transformaciones / animaciones
 -----------------------------------------------------------
 
@@ -13,8 +11,7 @@ gradientes / transformaciones / animaciones
 /*genera gradiente lineal en el body*/
 body {
   /* background-color: ##f29f04; */
-  background-image: linear-gradient( 135deg,
-  #f22222 50%, #f29f04);
+  background-image: linear-gradient( 135deg, #f22222 50%, #f29f04);
 }
 -------------------------------------------------------------
 /*acceso cambia de color al presionar click */
