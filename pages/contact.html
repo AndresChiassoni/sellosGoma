@@ -11,150 +11,189 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../css/style.css" />
     <title>Contacto</title>
   </head>
 
   <body>
-    <div class="gridContenedorPadre">
-      <header class="header">
-        <!-- MENU  -->
-        <nav>
-          <!-- LOGOTIPO -->
-          <a class="logo" href="../index.html"
-            ><img
-              class="imgLogo"
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light mibarra">
+        <div class="container-fluid">
+          <a class="navbar-brand img-fluid" href="../index.html">
+            <img
+              class="img-fluid imgLogo logo"
               src="../assets/images/logoRapiSellos120x120.png"
-              alt="Logotipo Rapisellos"
+              alt="RapiSellos"
             />
           </a>
-          <!-- Barra de navegación -->
-          <ul class="menu">
-            <li class="menu__opcion"><a href="../index.html">Inicio</a></li>
-            <li class="menu__opcion">
-              <a href="../pages/products.html">Productos</a>
-            </li>
-            <li class="menu__opcion">
-              <a href="../pages/about-us.html">Nosotros</a>
-            </li>
-            <li class="menu__opcion">
-              <a href="../pages/news.html">Noticias</a>
-            </li>
-            <li class="menu__opcion"><a href="#">Contacto</a></li>
-          </ul>
-        </nav>
-      </header>
-      <h2 class="tituloPrincipal tituloSecundario">Solicita Presupuesto</h2>
-      <!-- FORMULARIO DE CONTACTO-->
-      <div class="flexContainerContacto areaCentral">
-        <form action="#" method="GET" autocomplete="off">
-          <h3 class="form__title tituloTercero">Formulario de Contacto</h3>
-
-          <div class="form__nombreYapellido">
-            <label for="nombre">Nombre</label>
-
-            <input
-              class="form__nombreYapellido--caja"
-              type="text"
-              id="nombre"
-              name="nombre"
-              placeholder="escribe tu nombre"
-            />
-            <br /><br />
-            <label for="apellido">Apellido</label>
-            <input
-              class="form__nombreYapellido--caja"
-              type="text"
-              id="apellido"
-              name="apellido"
-              placeholder="escribe tu apellido"
-            />
+          <button
+            class="navbar-toggler navbar-dark"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon btn-menu"></span>
+          </button>
+          <div
+            id="navbarSupportedContent"
+            class="collapse navbar-collapse backgroundMenuBar justify-content-end"
+          >
+            <ul class="navbar-nav navbar">
+              <li class="nav-item px-3">
+                <a class="nav-link colorFuente" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link colorFuente" href="./products.html">Productos</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link colorFuente" href="./about-us.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link colorFuente" href="./news.html">Noticias</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link colorFuente" href="#"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
           </div>
+        </div>
+      </nav>
+    </header>
 
-          <div class="form__email">
-            <label for="email">email</label>
-            <input
-              class="form__email--caja"
-              type="text"
-              id="email"
-              name="email"
-              placeholder="escribe tu email"
-              size="40"
-            />
-          </div>
+    <h2 class="tituloPrincipal tituloSecundario">Solicita Presupuesto</h2>
+    <!-- FORMULARIO DE CONTACTO-->
+    <div class="flexContainerContacto areaCentral">
+      <form action="#" method="GET" autocomplete="off">
+        <h3 class="form__title tituloTercero">Formulario de Contacto</h3>
 
-          <div class="form__pais">
-            <select class="form__pais--caja" name="pais">
-              <option selected disabled>Elige un pais</option>
-              <option name="pais" value="argentina">Argentina</option>
-              <option name="pais" value="chile">Chile</option>
-              <option name="pais" value="uruguay">Uruguay</option>
-              <option name="pais" value="otro">Otro</option>
-            </select>
-          </div>
-          <div class="form__comentarios">
-            <label for="comentarios" name="comentarios">
-              <textarea
-                id="textAreaColumn"
-                class="form__comentarios--textarea"
-                name="comentarios"
-                id="comentarios"
-                cols="45"
-                rows="10"
-                placeholder="Escribe tu consulta aquí:"
-              ></textarea>
-            </label>
-          </div>
+        <div class="form__nombreYapellido">
+          <label for="nombre">Nombre</label>
 
-          <div class="form__newslater">
-            <input
-              class="form__newslater--check"
-              type="checkbox"
-              name="newslatter"
-              id="newslatter"
-              value="1"
-            />
-            <label for="newslatter" id="newslatter"
-              >Deseo recibir las Newslatter</label
-            >
-          </div>
+          <input
+            class="form__nombreYapellido--caja"
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="escribe tu nombre"
+          />
+          <br /><br />
+          <label for="apellido">Apellido</label>
+          <input
+            class="form__nombreYapellido--caja"
+            type="text"
+            id="apellido"
+            name="apellido"
+            placeholder="escribe tu apellido"
+          />
+        </div>
 
-          <div class="form__action">
-            <input class="form__action--button" type="submit" value="Enviar" />
-            <input class="form__action--button" type="reset" value="Borrar" />
-          </div>
-        </form>
-      </div>
+        <div class="form__email">
+          <label for="email">email</label>
+          <input
+            class="form__email--caja"
+            type="text"
+            id="email"
+            name="email"
+            placeholder="escribe tu email"
+            size="40"
+          />
+        </div>
 
-      <!-- aside a los lados del main (vacíos) -->
-      <aside class="asideIz"></aside>
-      <aside class="asideDer"></aside>
-      <!-- PIE DE PAGINA -->
-      <footer class="footer">
-        <ul class="piePagina">
-          <li class="opcionPie">RapiSellos &reg;</li>
-          <li class="opcionPie">
-            <a class="enlaceIcon" href="#">
-              <span class="icono icono-email"></span>
-            </a>
-          </li>
-          <li class="opcionPie">
-            <a class="enlaceIcon" href="#">
-              <span class="icono icono-face"></span>
-            </a>
-          </li>
-          <li class="opcionPie">
-            <a class="enlaceIcon" href="#">
-              <span class="icono icono-insta"></span>
-            </a>
-          </li>
-          <li class="opcionPie">
-            <a class="enlaceIcon" href="#">
-              <span class="icono icono-whatsapp"></span>
-            </a>
-          </li>
-        </ul>
-      </footer>
+        <div class="form__pais">
+          <select class="form__pais--caja" name="pais">
+            <option selected disabled>Elige un pais</option>
+            <option name="pais" value="argentina">Argentina</option>
+            <option name="pais" value="chile">Chile</option>
+            <option name="pais" value="uruguay">Uruguay</option>
+            <option name="pais" value="otro">Otro</option>
+          </select>
+        </div>
+        <div class="form__comentarios">
+          <label for="comentarios" name="comentarios">
+            <textarea
+              id="textAreaColumn"
+              class="form__comentarios--textarea"
+              name="comentarios"
+              id="comentarios"
+              cols="45"
+              rows="10"
+              placeholder="Escribe tu consulta aquí:"
+            ></textarea>
+          </label>
+        </div>
+
+        <div class="form__newslater">
+          <input
+            class="form__newslater--check"
+            type="checkbox"
+            name="newslatter"
+            id="newslatter"
+            value="1"
+          />
+          <label for="newslatter" id="newslatter"
+            >Deseo recibir las Newslatter</label
+          >
+        </div>
+
+        <div class="form__action">
+          <input class="form__action--button" type="submit" value="Enviar" />
+          <input class="form__action--button" type="reset" value="Borrar" />
+        </div>
+      </form>
     </div>
+
+    <!-- aside a los lados del main (vacíos) -->
+    <aside class="asideIz"></aside>
+    <aside class="asideDer"></aside>
+    <!-- PIE DE PAGINA -->
+    <footer class="footer">
+      <ul class="piePagina">
+        <li class="opcionPie">RapiSellos &reg;</li>
+        <li class="opcionPie">
+          <a class="enlaceIcon" href="#">
+            <span class="icono icono-email"></span>
+          </a>
+        </li>
+        <li class="opcionPie">
+          <a class="enlaceIcon" href="#">
+            <span class="icono icono-face"></span>
+          </a>
+        </li>
+        <li class="opcionPie">
+          <a class="enlaceIcon" href="#">
+            <span class="icono icono-insta"></span>
+          </a>
+        </li>
+        <li class="opcionPie">
+          <a class="enlaceIcon" href="#">
+            <span class="icono icono-whatsapp"></span>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
