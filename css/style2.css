@@ -1000,7 +1000,7 @@ body {
     color: #260801;
     font-size: 4rem;
     font-weight: 900;
-    text-align: center;
+    align-content: center;
     margin: 1rem auto 1rem auto;
   }
 
