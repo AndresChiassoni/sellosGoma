@@ -52,7 +52,9 @@
                 <a class="nav-link colorFuente" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link colorFuente" href="./products.html">Productos</a>
+                <a class="nav-link colorFuente" href="./products.html"
+                  >Productos</a
+                >
               </li>
               <li class="nav-item px-3">
                 <a class="nav-link colorFuente" href="./about-us.html"
@@ -63,9 +65,7 @@
                 <a class="nav-link colorFuente" href="./news.html">Noticias</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link colorFuente" href="#"
-                  >Contacto</a
-                >
+                <a class="nav-link colorFuente" href="#">Contacto</a>
               </li>
             </ul>
           </div>
@@ -73,91 +73,128 @@
       </nav>
     </header>
 
-    <h2 class="tituloPrincipal tituloSecundario">Solicita Presupuesto</h2>
-    <!-- FORMULARIO DE CONTACTO-->
-    <div class="flexContainerContacto areaCentral">
-      <form action="#" method="GET" autocomplete="off">
-        <h3 class="form__title tituloTercero">Formulario de Contacto</h3>
+    <h2 class="tituloPrincipal tituloSecundario mt-3">Solicita Presupuesto</h2>
 
-        <div class="form__nombreYapellido">
-          <label for="nombre">Nombre</label>
+    <div class="container-fluid mt-3">
+      <div class="row">
+        <div class="col-3">
+          <div class="container-fluid asideIz"></div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-4">
+          <!-- FORMULARIO DE CONTACTO-->
+          <div class="contenedorCentral text-center">
 
-          <input
-            class="form__nombreYapellido--caja"
-            type="text"
-            id="nombre"
-            name="nombre"
-            placeholder="escribe tu nombre"
-          />
-          <br /><br />
-          <label for="apellido">Apellido</label>
-          <input
-            class="form__nombreYapellido--caja"
-            type="text"
-            id="apellido"
-            name="apellido"
-            placeholder="escribe tu apellido"
-          />
-        </div>
+            <div class="row-col">
+              <h3 class="pt-3 pb-2 ps-5 pe-5">Formulario de Contacto</h3>
+              <div class="col pt-3 pb-2 ps-5 pe-5">
+                <input type="text" class="form-control" placeholder="nombre" aria-label="nombre">
+              </div>
+              <div class="col pt-3 pb-2 ps-5 pe-5">
+                <input type="text" class="form-control" placeholder="apellido" aria-label="apellido">
+              </div>
+            </div>
+            <div class="pt-3 pb-2 ps-5 pe-5">
+              <label for="exampleFormControlInput1" class="form-label">Dirección de Correo Electrónico</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email">
+            </div>
+            <div class="pt-2 pb-2 ps-5 pe-5">
+              <label for="exampleFormControlTextarea1" class="form-label"></label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="escribe tu consulta:">consulta</textarea>
+            </div>
+            <button type="button" class="btn btn-success mb-5 mt-2 me-2">Enviar</button>
+            <button type="button" class="btn btn-secondary mb-5 mt-2 ms-2">Borrar</button>
 
-        <div class="form__email">
-          <label for="email">email</label>
-          <input
-            class="form__email--caja"
-            type="text"
-            id="email"
-            name="email"
-            placeholder="escribe tu email"
-            size="40"
-          />
+          </div>
+            
+            <!-- <form action="#" method="GET" autocomplete="off"> -->
+              <!-- <h3 class="form__title tituloTercero">Formulario de Contacto</h3> -->
+              <!-- <div class="form__nombreYapellido"> -->
+                <!-- <label for="nombre">Nombre</label> -->
+                <!-- <input -->
+                  <!-- class="form__nombreYapellido--caja" -->
+                  <!-- type="text" -->
+                  <!-- id="nombre" -->
+                  <!-- name="nombre" -->
+                  <!-- placeholder="escribe tu nombre" -->
+                <!-- /> -->
+                <!-- <br /><br /> -->
+                <!-- <label for="apellido">Apellido</label> -->
+                <!-- <input -->
+                  <!-- class="form__nombreYapellido--caja" -->
+                  <!-- type="text" -->
+                  <!-- id="apellido" -->
+                  <!-- name="apellido" -->
+                  <!-- placeholder="escribe tu apellido" -->
+                <!-- /> -->
+              <!-- </div> -->
+              <!-- <div class="form__email"> -->
+                <!-- <label for="email">email</label> -->
+                <!-- <input -->
+                  <!-- class="form__email--caja" -->
+                  <!-- type="text" -->
+                  <!-- id="email" -->
+                  <!-- name="email" -->
+                  <!-- placeholder="escribe tu email" -->
+                  <!-- size="40" -->
+                <!-- /> -->
+              <!-- </div> -->
+              <!-- <div class="form__pais"> -->
+                <!-- <select class="form__pais--caja" name="pais"> -->
+                  <!-- <option selected disabled>Elige un pais</option> -->
+                  <!-- <option name="pais" value="argentina">Argentina</option> -->
+                  <!-- <option name="pais" value="chile">Chile</option> -->
+                  <!-- <option name="pais" value="uruguay">Uruguay</option> -->
+                  <!-- <option name="pais" value="otro">Otro</option> -->
+                <!-- </select> -->
+              <!-- </div> -->
+              <!-- <div class="form__comentarios"> -->
+                <!-- <label for="comentarios" name="comentarios"> -->
+                  <!-- <textarea -->
+                    <!-- id="textAreaColumn" -->
+                    <!-- class="form__comentarios--textarea" -->
+                    <!-- name="comentarios" -->
+                    <!-- id="comentarios" -->
+                    <!-- cols="45" -->
+                    <!-- rows="10" -->
+                    <!-- placeholder="Escribe tu consulta aquí:" -->
+                  <!-- ></textarea> -->
+                <!-- </label> -->
+              <!-- </div> -->
+              <!-- <div class="form__newslater"> -->
+                <!-- <input -->
+                  <!-- class="form__newslater--check" -->
+                  <!-- type="checkbox" -->
+                  <!-- name="newslatter" -->
+                  <!-- id="newslatter" -->
+                  <!-- value="1" -->
+                <!-- /> -->
+                <!-- <label for="newslatter" id="newslatter" -->
+                  <!-- >Deseo recibir las Newslatter</label -->
+                <!-- > -->
+              <!-- </div> -->
+              <!-- <div class="form__action"> -->
+                <!-- <input -->
+                  <!-- class="form__action--button" -->
+                  <!-- type="submit" -->
+                  <!-- value="Enviar" -->
+                <!-- /> -->
+                <!-- <input -->
+                  <!-- class="form__action--button" -->
+                  <!-- type="reset" -->
+                  <!-- value="Borrar" -->
+                <!-- /> -->
+              <!-- </div> -->
+            <!-- </form> -->
+          <!-- </div>       -->
         </div>
-
-        <div class="form__pais">
-          <select class="form__pais--caja" name="pais">
-            <option selected disabled>Elige un pais</option>
-            <option name="pais" value="argentina">Argentina</option>
-            <option name="pais" value="chile">Chile</option>
-            <option name="pais" value="uruguay">Uruguay</option>
-            <option name="pais" value="otro">Otro</option>
-          </select>
+        <div class="col-1"></div>
+        <div class="col-3">
+          <div class="container-fluid asideDer"></div>
         </div>
-        <div class="form__comentarios">
-          <label for="comentarios" name="comentarios">
-            <textarea
-              id="textAreaColumn"
-              class="form__comentarios--textarea"
-              name="comentarios"
-              id="comentarios"
-              cols="45"
-              rows="10"
-              placeholder="Escribe tu consulta aquí:"
-            ></textarea>
-          </label>
-        </div>
-
-        <div class="form__newslater">
-          <input
-            class="form__newslater--check"
-            type="checkbox"
-            name="newslatter"
-            id="newslatter"
-            value="1"
-          />
-          <label for="newslatter" id="newslatter"
-            >Deseo recibir las Newslatter</label
-          >
-        </div>
-
-        <div class="form__action">
-          <input class="form__action--button" type="submit" value="Enviar" />
-          <input class="form__action--button" type="reset" value="Borrar" />
-        </div>
-      </form>
+      </div>
     </div>
 
-    <!-- aside a los lados del main (vacíos) -->
-    <aside class="asideIz"></aside>
-    <aside class="asideDer"></aside>
     <!-- PIE DE PAGINA -->
     <footer class="footer">
       <ul class="piePagina">

@@ -29,7 +29,6 @@ body {
 .imgLogo {
   width: 120px;
   height: 120px;
-
 }
 
 /*acceso cambia de color al precionar click */
@@ -101,7 +100,6 @@ nav li:hover {
 
 /* Imagenes backgraund laterales */
 .asideIz {
-  /* background-repeat: repeat-y ; */
   width: 100%;
   height: 100%;
   background-image: url(../assets/images/surface_p1_fondoSellos.png);
@@ -122,7 +120,7 @@ nav li:hover {
 }
 
 .ajusteImagenGr {
-  width: 80%;
+  width: 70%;
 }
 
 .contenedorCentral {
@@ -136,6 +134,7 @@ nav li:hover {
 
 /* amplia fotos de productos 20% con :hover*/
 .contFotoProduc:hover {
- transform: scale(1.1);
- transition: 1.5s;
-  }
+  transform: scale(1.1);
+  transition: 1.5s;
+}
+

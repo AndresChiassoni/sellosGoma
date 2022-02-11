@@ -52,7 +52,9 @@
                 <a class="nav-link colorFuente" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link colorFuente" href="./products.html">Productos</a>
+                <a class="nav-link colorFuente" href="./products.html"
+                  >Productos</a
+                >
               </li>
               <li class="nav-item px-3">
                 <a class="nav-link colorFuente" href="./about-us.html"
@@ -73,42 +75,54 @@
       </nav>
     </header>
 
-    <h2 class="tituloPrincipal ajusteTitulo">Noticias</h2>
+    <h2 class="tituloPrincipal ajusteTitulo mt-3">Noticias</h2>
 
-    <!-- Videos de productos en Youtube -->
-    <section class="areaCentral contenedorNews">
-      <article class="ajusteArticle">
-        <h3 class="tituloTercero">Colop EOS Stamp Mouse</h3>
-        <iframe
-          class="videoYoutube"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/BxS69-0HC0M"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </article>
+    <div class="container-fluid mt-3">
+      <div class="row">
+        <div class="col-1">
+          <div class="container-fluid asideIz"></div>
+        </div>
 
-      <article class="ajusteArticle">
-        <h3 class="tituloTercero">Productos de la línea COLOP</h3>
-        <iframe
-          class="videoYoutube"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/kMD-JEZIEGU"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </article>
-    </section>
+        <div class="col-10 contenedorCentral">
+          <div class="row-col text-center py-3">
+            <div class="col">
+              <article class="ajusteArticle">
+                <h3 class="tituloTercero py-2">Colop EOS Stamp Mouse</h3>
+                <iframe 
+                  class="videoYoutube pb-5"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/BxS69-0HC0M"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </article>
+            </div>
+            <div class="col">
+              <article class="ajusteArticle">
+                <h3 class="tituloTercero py-2">Productos de la línea COLOP</h3>
+                <iframe
+                  class="videoYoutube pb-5"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/kMD-JEZIEGU"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </article>
+            </div>
+          </div>
+        </div>
 
-    <!-- aside a los lados del main (vacíos) -->
-    <aside class="asideIz"></aside>
-    <aside class="asideDer"></aside>
+        <div class="col-1">
+          <div class="container-fluid asideDer"></div>
+        </div>
+      </div>
+    </div>
     <!-- PIE DE PAGINA -->
     <footer class="footer">
       <ul class="piePagina">
