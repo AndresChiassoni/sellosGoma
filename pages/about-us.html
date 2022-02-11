@@ -22,8 +22,7 @@
   </head>
 
   <body>
-   
-    <header >
+    <header>
       <nav class="navbar navbar-expand-lg navbar-light mibarra">
         <div class="container-fluid">
           <a class="navbar-brand img-fluid" href="../index.html">
@@ -44,13 +43,18 @@
           >
             <span class="navbar-toggler-icon btn-menu"></span>
           </button>
-          <div id="navbarSupportedContent" class="collapse navbar-collapse backgroundMenuBar justify-content-end">
+          <div
+            id="navbarSupportedContent"
+            class="collapse navbar-collapse backgroundMenuBar justify-content-end"
+          >
             <ul class="navbar-nav navbar">
               <li class="nav-item px-3">
                 <a class="nav-link colorFuente" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link colorFuente" href="./products.html">Productos</a>
+                <a class="nav-link colorFuente" href="./products.html"
+                  >Productos</a
+                >
               </li>
               <li class="nav-item px-3">
                 <a class="nav-link colorFuente" href="#">Nosotros</a>
@@ -59,7 +63,9 @@
                 <a class="nav-link colorFuente" href="./news.html">Noticias</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link colorFuente" href="./contact.html">Contacto</a>
+                <a class="nav-link colorFuente" href="./contact.html"
+                  >Contacto</a
+                >
               </li>
             </ul>
           </div>
@@ -67,76 +73,85 @@
       </nav>
     </header>
 
-      <h2 class="tituloPrincipal ajusteTitulo">Nosotros</h2>
+    <h2 class="tituloPrincipal ajusteTitulo mt-4 pb-2">Nosotros</h2>
 
+    <main class="container-fluid">
       <!-- Historia de la empresa y ubicación-->
-      <section class="areaCentral gridConteinerNos">
-        <article class="cajaNosotoros">
-          <h3 class="tituloTercero">Nuestros comienzos</h3>
-          <img
-            width="400"
-            height="400"
-            src="../assets/images/kioscoTrelew400x400.jpg"
-            alt="Ciudad de Trelew"
-          />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            voluptas ratione illum excepturi itaque vitae, accusantium nobis
-            unde doloribus expedita?
-          </p>
-        </article>
+      <div class="row">
+        <div class="col-1">
+          <div class="container-fluid asideIz"></div>
+        </div>
+        <div class="col-10 contenedorCentral text-center">
+          <div class="row">
+            <div class="col">
+              <h3 class="tituloTercero py-3">Nuestros comienzos</h3>
+              <img
+                class="img-fluid"
+                width="400"
+                height="400"
+                src="../assets/images/kioscoTrelew400x400.jpg"
+                alt="Ciudad de Trelew"
+              />
+              <p class="py-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                voluptas ratione illum excepturi itaque vitae, accusantium nobis
+                unde doloribus expedita?
+              </p>
+            </div>
+            <div class="col">
+              <h3 class="tituloTercero py-3">Donde estamos</h3>
+              <iframe
+              
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d45167.52567111614!2d-65.
+            34645534843133!3d-43.25792513048323!3m2!1i1024!2i768!4f13.
+            1!3m3!1m2!1s0xbe0144b6cf6769bb%3A0x9cbd6c76af132e0d!2sTrelew%2C%20Chubut!5e0!3m2!1ses-419!2
+            sar!4v1635281674288!5m2!1ses-419!2sar"
+                width="400px"
+                height="400px"
+                style="border: 5"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+              <p class="py-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                quia commodi atque libero ducimus omnis similique mollitia
+                impedit, cumque necessitatibus?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="container-fluid asideDer"></div>
+        </div>
+      </div>
+    </main>
+    <!-- PIE DE PAGINA -->
+    <footer class="footer">
+      <ul class="piePagina">
+        <li class="opcionPie">RapiSellos &reg;</li>
+        <li class="opcionPie">
+          <a class="enlaceIcon" href="#">
+            <span class="icono icono-email"></span>
+          </a>
+        </li>
+        <li class="opcionPie">
+          <a class="enlaceIcon" href="#">
+            <span class="icono icono-face"></span>
+          </a>
+        </li>
+        <li class="opcionPie">
+          <a class="enlaceIcon" href="#">
+            <span class="icono icono-insta"></span>
+          </a>
+        </li>
+        <li class="opcionPie">
+          <a class="enlaceIcon" href="#">
+            <span class="icono icono-whatsapp"></span>
+          </a>
+        </li>
+      </ul>
+    </footer>
 
-        <article class="cajaNosotoros">
-          <h3 class="tituloTercero">Donde estamos</h3>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d45167.52567111614!2d-65.
-        34645534843133!3d-43.25792513048323!3m2!1i1024!2i768!4f13.
-        1!3m3!1m2!1s0xbe0144b6cf6769bb%3A0x9cbd6c76af132e0d!2sTrelew%2C%20Chubut!5e0!3m2!1ses-419!2
-        sar!4v1635281674288!5m2!1ses-419!2sar"
-            width="400"
-            height="400"
-            style="border: 5"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quia
-            commodi atque libero ducimus omnis similique mollitia impedit,
-            cumque necessitatibus?
-          </p>
-        </article>
-      </section>
-
-      <!-- aside a los lados del main (vacíos) -->
-      <aside class="asideIz"></aside>
-      <aside class="asideDer"></aside>
-      <!-- PIE DE PAGINA -->
-      <footer class="footer">
-        <ul class="piePagina">
-          <li class="opcionPie">RapiSellos &reg;</li>
-          <li class="opcionPie">
-            <a class="enlaceIcon" href="#">
-              <span class="icono icono-email"></span>
-            </a>
-          </li>
-          <li class="opcionPie">
-            <a class="enlaceIcon" href="#">
-              <span class="icono icono-face"></span>
-            </a>
-          </li>
-          <li class="opcionPie">
-            <a class="enlaceIcon" href="#">
-              <span class="icono icono-insta"></span>
-            </a>
-          </li>
-          <li class="opcionPie">
-            <a class="enlaceIcon" href="#">
-              <span class="icono icono-whatsapp"></span>
-            </a>
-          </li>
-        </ul>
-      </footer>
-   
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
