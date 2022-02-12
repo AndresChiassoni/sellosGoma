@@ -138,3 +138,38 @@ nav li:hover {
   transition: 1.5s;
 }
 
+/*FOOTER*/
+.pie1 {
+  height: 70px;
+  background-color: #260801d0;
+  font-family: "Lato", sans-serif;
+}
+
+.pie2 {
+  height: 50px;
+  color: #f22222;
+  background-color: #260801;
+  font-family: "Lato", sans-serif;
+}
+
+.icono {
+  width: 50px;
+  height: 50px;
+  display: block;
+  background: url("../assets/images/css_sprites_white_100px.png") no-repeat;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.icono-email {
+  background-position: -6px 6px;
+}
+.icono-face {
+  background-position: -50px 0;
+}
+.icono-insta {
+  background-position: 0 -50px;
+}
+.icono-whatsapp {
+  background-position: -50px -50px;
+}
+
