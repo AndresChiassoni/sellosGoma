@@ -21,13 +21,14 @@ body {
     background-color: #260801 !important;
     font-family: "Lato", sans-serif;
     height: 80px;
+    z-index: 10;
   }
   .colorFuente {
     color: #cecdcd !important;
   }
   /*color menu amburguesa*/
   .backgroundMenuBar {
-    background-color: #26080194;
+    background-color: #260801b2;
     color: #cecdcd;
   }
   /*Logo de la empresa*/
@@ -125,7 +126,7 @@ body {
     width: 100%;
   }
   .index {
-    z-index: -1;
+    z-index: 1;
   }
 
   /*Contenedores*/
@@ -174,13 +175,14 @@ body {
     background-color: #260801 !important;
     font-family: "Lato", sans-serif;
     height: 80px;
+    z-index: 10;
   }
   .colorFuente {
     color: #cecdcd !important;
   }
   /*Menú amurguesa*/
   .backgroundMenuBar {
-    background-color: #26080194;
+    background-color: #260801b2;
     color: #cecdcd;
   }
   /*Logo de la empresa*/
@@ -281,7 +283,7 @@ body {
     width: 70%;
   }
   .index {
-    z-index: -1;
+    z-index: 1;
   }
 
   /*Contenedores*/
@@ -337,7 +339,7 @@ body {
   }
   /*Menú amburguesa*/
   .backgroundMenuBar {
-    background-color: #26080194;
+    background-color: #260801b2;
     color: #cecdcd;
   }
   /*Logo de la empresa*/
