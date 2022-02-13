@@ -27,8 +27,10 @@
 
   <body>
     <header>
+      <!-- BARRA DE NAVEGACION BOOSTRAP -->
       <nav class="navbar navbar-expand-lg navbar-light mibarra">
         <div class="container-fluid">
+          <!-- LOGO -->
           <a class="navbar-brand img-fluid" href="../index.html">
             <img
               class="img-fluid imgLogo logo"
@@ -36,6 +38,7 @@
               alt="RapiSellos"
             />
           </a>
+          <!-- BOTON MENU AMBURGUESA -->
           <button
             class="navbar-toggler navbar-dark"
             type="button"
@@ -47,6 +50,7 @@
           >
             <span class="navbar-toggler-icon btn-menu"></span>
           </button>
+          <!-- NAV -->
           <div
             id="navbarSupportedContent"
             class="collapse navbar-collapse backgroundMenuBar justify-content-end"
@@ -54,27 +58,29 @@
             <ul class="navbar-nav navbar me-2">
               <li class="nav-item d-flex px-3">
                 <i class="bi bi-house-fill mt-2 colorIco"></i>
-                <a class="nav-link colorFuente" href="../index.html">Inicio</a>
+                <a class="nav-link colorFuente ms-1" href="../index.html"
+                  >Inicio</a
+                >
               </li>
               <li class="nav-item d-flex px-3">
                 <i class="bi bi-hand-index-fill mt-2 colorIco"></i>
-                <a class="nav-link colorFuente" href="./products.html"
+                <a class="nav-link colorFuente ms-1" href="./products.html"
                   >Productos</a
                 >
               </li>
               <li class="nav-item d-flex px-3">
                 <i class="bi bi-person-lines-fill mt-2 colorIco"></i>
-                <a class="nav-link colorFuente" href="./about-us.html"
+                <a class="nav-link colorFuente ms-1" href="./about-us.html"
                   >Nosotros</a
                 >
               </li>
               <li class="nav-item d-flex px-3">
                 <i class="bi bi-newspaper mt-2 colorIco"></i>
-                <a class="nav-link colorFuente" href="#">Noticias</a>
+                <a class="nav-link colorFuente ms-1" href="#">Noticias</a>
               </li>
               <li class="nav-item d-flex px-3">
                 <i class="bi bi-envelope mt-2 colorIco"></i>
-                <a class="nav-link colorFuente" href="./contact.html"
+                <a class="nav-link colorFuente ms-1" href="./contact.html"
                   >Contacto</a
                 >
               </li>
@@ -84,55 +90,62 @@
       </nav>
     </header>
 
+    <!-- TITULO -->
     <h2 class="tituloPrincipal ajusteTitulo mt-3">Noticias</h2>
 
+    <!-- SECCION PRINCIPAL CON BOOSTRAP -->
     <div class="container-fluid mt-3">
       <div class="row">
         <div class="col-1">
           <div class="asideIz"></div>
         </div>
-
         <div class="col-10 contenedorCentral">
-          <div class="row-col text-center py-3">
-            <div class="col">
-              <article class="ajusteArticle">
-                <h3 class="tituloTercero py-2">Colop EOS Stamp Mouse</h3>
+          <div class="row">
+            
+            <!-- vacio -->
+            <div class="col col-lg-2 col-md-2 col-sm-1"></div>
+
+            <!-- videos -->
+            <div class="row-col col-lg-8 col-md-8 col-sm-10 py-4">
+              <h3 class="col tituloTercero text-center pt-3">
+                Colop EOS Stamp Mouse
+              </h3>
+              <div class="col ratio ratio-16x9 my-3 index">
                 <iframe
-                  class="videoYoutube pb-5"
-                  width="560"
-                  height="315"
+                  class="videoYoutube"
                   src="https://www.youtube.com/embed/BxS69-0HC0M"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
-              </article>
-            </div>
-            <div class="col">
-              <article class="ajusteArticle">
-                <h3 class="tituloTercero py-2">Productos de la línea COLOP</h3>
+              </div>
+              <h3 class="col tituloTercero text-center pt-5">
+                Productos de la línea COLOP
+              </h3>
+              <div class="col ratio ratio-16x9 my-3" ;>
                 <iframe
-                  class="videoYoutube pb-5"
-                  width="560"
-                  height="315"
+                  class="videoYoutube"
                   src="https://www.youtube.com/embed/kMD-JEZIEGU"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
-              </article>
+              </div>
             </div>
+
+            <!-- vacio -->
+            <div class="col col-lg-2 col-m2-2 col-sm-1"></div>
           </div>
         </div>
-
         <div class="col-1">
           <div class="asideDer"></div>
         </div>
       </div>
     </div>
-    <!-- Footer con boostrap 5 -->
+
+    <!-- FOOTER BOOSTRAP -->
     <footer>
       <div class="container-fluid m-0 p-0"></div>
       <ul class="navbar mb-0 justify-content-around align-content-center pie1">
