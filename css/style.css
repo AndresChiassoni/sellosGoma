@@ -37,7 +37,7 @@ nav li a:active {
 }
 /*acceso se amplia al pasar el mouse*/
 nav li:hover {
-  transform: scale(1.2);
+  transform: scale(1.19);
   transition: 1s;
 }
 
@@ -71,7 +71,6 @@ nav li:hover {
   font-size: 4rem;
   font-weight: 900;
   text-align: center;
-  /* margin: 1rem auto 1rem auto; */
 }
 
 .tituloSecundario {
