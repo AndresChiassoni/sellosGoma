@@ -37,7 +37,7 @@ nav li a:active {
 }
 /*acceso se amplia al pasar el mouse*/
 nav li:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
   transition: 1s;
 }
 
