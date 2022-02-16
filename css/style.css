@@ -9,6 +9,9 @@
 
 body {
   background-color: #f22222;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
 }
 
 /*---------------------------------------------------------------*/
@@ -69,16 +72,16 @@ body {
   .tituloPrincipal {
     font-family: "Lato", sans-serif;
     color: #260801;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 700;
     text-align: center;
-    padding-top: 1.3rem;
-    padding-bottom: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   .tituloSecundario {
     font-family: "Lato", sans-serif;
     color: #260801;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
     word-spacing: 5px;
     padding-top: 1rem;
@@ -226,6 +229,7 @@ body {
     font-size: 3rem;
     font-weight: 900;
     text-align: center;
+    margin-top: 1.5rem;
   }
   .tituloSecundario {
     font-family: "Lato", sans-serif;
@@ -386,6 +390,7 @@ body {
     font-weight: 900;
     word-spacing: 5px;
     text-align: center;
+    margin-top: 1.5rem;
   }
   .tituloSecundario {
     font-family: "Lato", sans-serif;
@@ -476,5 +481,65 @@ body {
   }
   .colorIco {
     color: #cecdcd;
+  }
+}
+
+/*ESTILOS MOBILE LANSCAPE*/
+/*---------------------------------------------------------------*/
+@media (max-width: 916px) and (orientation: landscape) {
+  .tituloPrincipal {
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px auto !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .ajusteImagenGr {
+    width: 60%;
+    padding-top: 0.5rem !important;
+    margin-top: 0 !important;
+  }
+
+  .paddingProducLand {
+    padding: 2px !important;
+  }
+
+  .imgProducto {
+    width: 150px;
+    height: 150px;
+  }
+  .ajusteTitulo {
+    width: 100%;
+    text-align: right;
+    padding-right: 100px;
+    word-spacing: 5px;
+  }
+
+  .tituloTercero {
+    padding-top: 5px !important;
+    margin-bottom: 5px !important;
+  }
+
+  .imgNos {
+    width: 220px;
+    height: 220px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .ajusteNosLand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+  .ajusteRatio {
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
