@@ -11,7 +11,7 @@ body {
   background-color: #f22222;
   display: grid; /*corrige posición del footer siempre abajo*/
   min-height: 100vh; /*idem*/
-  grid-template-rows: auto 1fr auto; /*idem*/
+  grid-template-rows: auto auto 1fr auto; /*idem*/
 }
 
 /*---------------------------------------------------------------*/
@@ -75,7 +75,7 @@ body {
     font-size: 1.6rem;
     font-weight: 700;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     margin-bottom: 0.5rem;
   }
   .tituloSecundario {
@@ -137,6 +137,7 @@ body {
     background-color: #2947f215;
     border-radius: 5px;
     height: auto;
+    align-content: space-around;
   }
   .contFotoProduc {
     border: 0.5px solid #cecdcd75;
@@ -161,10 +162,82 @@ body {
     font-family: "Lato", sans-serif;
   }
   .iconoSize {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .colorIco {
     color: #cecdcd;
+  }
+}
+
+/*---------------------------------------------------------------*/
+/*ESTILOS MOBILE/TABLET LANSCAPE*/
+/*---------------------------------------------------------------*/
+@media (max-width: 920px) and (orientation: landscape) {
+  /*Ajuste Titulos*/
+
+  .tituloPrincipal {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px auto 5px auto;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .ajusteTitulo {
+    width: 100%;
+    text-align: right;
+    padding-right: 100px;
+    word-spacing: 5px;
+  }
+  .tituloTercero {
+    padding-top: 5px !important;
+    margin-bottom: 5px !important;
+  }
+
+  /*Ajuste de imagenes*/
+  .ajusteImagenGr {
+    width: 55%;
+    /* padding-top: 1rem !important; */
+    /* margin-top: 0 !important; */
+  }
+
+  .paddingProducLand {
+    padding: 2px !important;
+  }
+
+  .imgProducto {
+    width: 130px;
+    height: 130px;
+  }
+
+  .imgNos {
+    width: 150px;
+    height: 150px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  /*Contenedores*/
+  .contenedorCentral {
+    width: 80%;
+    height: auto;
+  }
+
+  /*Ajuste primer contenedor about-us*/
+  .ajusteNosLand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20x;
+    padding-bottom: 15px;
+  }
+
+  /*Ajuste Videos y mapa*/
+  .ajusteRatio {
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -296,8 +369,10 @@ body {
   .contenedorCentral {
     background-color: #2947f215;
     border-radius: 5px;
-    height: auto;
+    height: 800px;
+    align-content: space-around;
   }
+
   .contFotoProduc {
     border: 0.5px solid #cecdcd75;
   }
@@ -482,82 +557,9 @@ body {
     font-family: "Lato", sans-serif;
   }
   .iconoSize {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
   .colorIco {
     color: #cecdcd;
-  }
-}
-
-/*ESTILOS MOBILE LANSCAPE*/
-/*---------------------------------------------------------------*/
-@media (max-width: 916px) and (orientation: landscape) {
-
-  .tituloPrincipal {
-    font-size: 1.7rem;
-    font-weight: 700;
-    text-align: center;
-    margin: 10px auto 5px auto;
-    padding-top: 0 ;
-    padding-bottom: 0 ;
-  }
-
-  .ajusteImagenGr {
-    width: 60%;
-    padding-top: 1rem !important;
-    margin-top: 0 !important;
-  }
-
-  .paddingProducLand {
-    padding: 2px !important;
-  }
-
-  .imgProducto {
-    width: 150px;
-    height: 150px;
-  }
-  .ajusteTitulo {
-    width: 100%;
-    text-align: right;
-    padding-right: 100px;
-    word-spacing: 5px;
-  }
-
-  .tituloTercero {
-    padding-top: 5px !important;
-    margin-bottom: 5px !important;
-  }
-
-  .imgNos {
-    width: 220px;
-    height: 220px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  .ajusteNosLand {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 25px;
-    padding-bottom: 15px;
-  }
-  .ajusteRatio {
-    width: 70%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /*Barra de navegación*/
-  .mibarra {
-    font-size: 1rem;
-    height: 70px;
-  }
-
-  /*Logo de la empresa*/
-  .imgLogo {
-    width: 50px;
-    height: 50px;
   }
 }
