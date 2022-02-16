@@ -9,9 +9,9 @@
 
 body {
   background-color: #f22222;
-  display: grid;
-  min-height: 100vh;
-  grid-template-rows: auto 1fr auto;
+  display: grid; /*corrige posición del footer siempre abajo*/
+  min-height: 100vh; /*idem*/
+  grid-template-rows: auto 1fr auto; /*idem*/
 }
 
 /*---------------------------------------------------------------*/
@@ -49,7 +49,7 @@ body {
     transition: 1s;
   }
   /*animación del logo*/
-  .logo {
+  .logoAnim {
     animation-name: movimiento;
     animation-duration: 3s;
     animation-iteration-count: 2;
@@ -64,7 +64,7 @@ body {
     }
   }
   /*pausa animación al pasar el puntero*/
-  .logo:hover {
+  .logoAnim:hover {
     animation-play-state: paused;
   }
 
@@ -76,7 +76,7 @@ body {
     font-weight: 700;
     text-align: center;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   .tituloSecundario {
     font-family: "Lato", sans-serif;
@@ -85,7 +85,7 @@ body {
     font-weight: 600;
     word-spacing: 5px;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
   }
   .tituloTercero {
     font-family: "Lato", sans-serif;
@@ -203,7 +203,7 @@ body {
     transition: 1s;
   }
   /*Animación del logo*/
-  .logo {
+  .logoAnim {
     animation-name: movimiento;
     animation-duration: 3s;
     animation-iteration-count: 2;
@@ -218,7 +218,7 @@ body {
     }
   }
   /*pausa animación al pasar el puntero*/
-  .logo:hover {
+  .logoAnim:hover {
     animation-play-state: paused;
   }
 
@@ -230,6 +230,7 @@ body {
     font-weight: 900;
     text-align: center;
     margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
   }
   .tituloSecundario {
     font-family: "Lato", sans-serif;
@@ -237,6 +238,7 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     word-spacing: 5px;
+    margin-bottom: 0.5rem;
   }
   .tituloTercero {
     font-family: "Lato", sans-serif;
@@ -350,6 +352,8 @@ body {
   .imgLogo {
     width: 120px;
     height: 120px;
+    margin-top: 80px;
+    margin-left: 10px;
   }
   /*cambia de color al precionar mouse*/
   nav li a:active {
@@ -361,9 +365,7 @@ body {
     transition: 1s;
   }
   /*Animación del logo*/
-  .logo {
-    margin-top: 80px;
-    margin-left: 10px;
+  .logoAnim {
     animation-name: movimiento;
     animation-duration: 3s;
     animation-iteration-count: 2;
@@ -378,7 +380,7 @@ body {
     }
   }
   /*pausa animación al pasar el puntero*/
-  .logo:hover {
+  .logoAnim:hover {
     animation-play-state: paused;
   }
 
@@ -391,6 +393,7 @@ body {
     word-spacing: 5px;
     text-align: center;
     margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
   }
   .tituloSecundario {
     font-family: "Lato", sans-serif;
@@ -398,6 +401,8 @@ body {
     font-size: 3rem;
     font-weight: 700;
     word-spacing: 5px;
+    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
   }
   .tituloTercero {
     font-family: "Lato", sans-serif;
@@ -487,18 +492,19 @@ body {
 /*ESTILOS MOBILE LANSCAPE*/
 /*---------------------------------------------------------------*/
 @media (max-width: 916px) and (orientation: landscape) {
+
   .tituloPrincipal {
     font-size: 1.7rem;
     font-weight: 700;
     text-align: center;
-    margin: 10px auto !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    margin: 10px auto 5px auto;
+    padding-top: 0 ;
+    padding-bottom: 0 ;
   }
 
   .ajusteImagenGr {
     width: 60%;
-    padding-top: 0.5rem !important;
+    padding-top: 1rem !important;
     margin-top: 0 !important;
   }
 
@@ -541,5 +547,17 @@ body {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  /*Barra de navegación*/
+  .mibarra {
+    font-size: 1rem;
+    height: 70px;
+  }
+
+  /*Logo de la empresa*/
+  .imgLogo {
+    width: 50px;
+    height: 50px;
   }
 }
