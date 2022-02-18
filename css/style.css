@@ -17,7 +17,7 @@ body {
 /*---------------------------------------------------------------*/
 /*ESTILOS MOBILE*/
 /*---------------------------------------------------------------*/
-@media only screen and (min-width: 0px) and (max-width: 786px) {
+@media only screen and (min-width: 0px) and (max-width: 537px) {
   /*Barra de navegación*/
   .mibarra {
     font-size: 1.2rem;
@@ -72,7 +72,7 @@ body {
   .tituloPrincipal {
     font-family: "Lato", sans-serif;
     color: #260801;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 700;
     text-align: center;
     margin-top: 1.5rem;
@@ -136,7 +136,7 @@ body {
   .contenedorCentral {
     background-color: #2947f215;
     border-radius: 5px;
-    height: auto;
+    height: 100%;
     align-content: space-around;
   }
   .contFotoProduc {
@@ -170,81 +170,9 @@ body {
 }
 
 /*---------------------------------------------------------------*/
-/*ESTILOS MOBILE/TABLET LANSCAPE*/
-/*---------------------------------------------------------------*/
-@media (max-width: 920px) and (orientation: landscape) {
-  /*Ajuste Titulos*/
-
-  .tituloPrincipal {
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
-    margin: 10px auto 5px auto;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  .ajusteTitulo {
-    width: 100%;
-    text-align: right;
-    padding-right: 100px;
-    word-spacing: 5px;
-  }
-  .tituloTercero {
-    padding-top: 5px !important;
-    margin-bottom: 5px !important;
-  }
-
-  /*Ajuste de imagenes*/
-  .ajusteImagenGr {
-    width: 55%;
-    /* padding-top: 1rem !important; */
-    /* margin-top: 0 !important; */
-  }
-
-  .paddingProducLand {
-    padding: 2px !important;
-  }
-
-  .imgProducto {
-    width: 130px;
-    height: 130px;
-  }
-
-  .imgNos {
-    width: 150px;
-    height: 150px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  /*Contenedores*/
-  .contenedorCentral {
-    width: 80%;
-    height: auto;
-  }
-
-  /*Ajuste primer contenedor about-us*/
-  .ajusteNosLand {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20x;
-    padding-bottom: 15px;
-  }
-
-  /*Ajuste Videos y mapa*/
-  .ajusteRatio {
-    width: 60%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-/*---------------------------------------------------------------*/
 /*ESTILOS TABLET*/
 /*---------------------------------------------------------------*/
-@media only screen and (min-width: 769px) and (max-width: 1023px) {
+@media only screen and (min-width: 538px) and (max-width: 1023px) {
   /*Barra de navegación*/
   .mibarra {
     font-size: 1.2rem;
@@ -323,7 +251,7 @@ body {
   .ajusteTitulo {
     width: 100%;
     text-align: right;
-    padding-right: 200px;
+    padding-right: 10%;
     font-size: 3rem;
     word-spacing: 5px;
   }
@@ -369,7 +297,7 @@ body {
   .contenedorCentral {
     background-color: #2947f215;
     border-radius: 5px;
-    height: 800px;
+    height: 100%;
     align-content: space-around;
   }
 
@@ -401,6 +329,78 @@ body {
   }
   .colorIco {
     color: #cecdcd;
+  }
+}
+
+/*---------------------------------------------------------------*/
+/*ESTILOS MOBILE/TABLET LANSCAPE*/
+/*---------------------------------------------------------------*/
+@media (max-width: 920px) and (orientation: landscape) {
+  /*Ajuste Titulos*/
+
+  .tituloPrincipal {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px auto 5px auto;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .ajusteTitulo {
+    width: 100%;
+    text-align: right;
+    padding-right: 100px;
+    word-spacing: 5px;
+  }
+  .tituloTercero {
+    padding-top: 5px !important;
+    margin-bottom: 5px !important;
+  }
+
+  /*Ajuste de imagenes*/
+  .ajusteImagenGr {
+    width: 55%;
+    /* padding-top: 1rem !important; */
+    /* margin-top: 0 !important; */
+  }
+
+  .paddingProducLand {
+    padding: 2px !important;
+  }
+
+  .imgProducto {
+    width: 130px;
+    height: 130px;
+  }
+
+  .imgNos {
+    width: 150px;
+    height: 150px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  /*Contenedores*/
+  .contenedorCentral {
+    width: 80%;
+    height: 100%;
+  }
+
+  /*Ajuste primer contenedor about-us*/
+  .ajusteNosLand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20x;
+    padding-bottom: 15px;
+  }
+
+  /*Ajuste Videos y mapa*/
+  .ajusteRatio {
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -489,7 +489,7 @@ body {
   .ajusteTitulo {
     width: 100%;
     text-align: right;
-    padding-right: 200px;
+    padding-right: 10%;
     word-spacing: 5px;
   }
   p {
