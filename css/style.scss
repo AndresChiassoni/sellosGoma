@@ -1,126 +1,13 @@
-@charset "UTF-8";
-/*RESET*/
-* {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  text-decoration: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-/*COLORES*/
-/*FUENTES*/
-/*Barra de navegación*/
-.mibarra {
-  font-size: 1.2rem;
-  background-color: #260801 !important;
-  font-family: "Lato", sans-serif;
-  height: 80px;
-  z-index: 10;
-}
-
-.colorFuente {
-  color: #cecdcd !important;
-}
-
-/*color menu amburguesa*/
-.backgroundMenuBar {
-  background-color: #260801b2;
-  color: #cecdcd;
-}
-
-/*Logo de la empresa*/
-.imgLogo {
-  width: 60px;
-  height: 60px;
-}
-
-/*cambia de color al precionar puntero */
-nav li:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-nav li a:active {
-  color: #f22222 !important;
-}
-
-/*animación del logo*/
-.logoAnim {
-  -webkit-animation-name: movimiento;
-          animation-name: movimiento;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-iteration-count: 2;
-          animation-iteration-count: 2;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  /*pausa animación al pasar el puntero*/
-}
-
-@-webkit-keyframes movimiento {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes movimiento {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-.logoAnim:hover {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-}
-
-/*FOOTER*/
-.pie1 {
-  height: 80px;
-  background-color: #260801d0;
-  font-family: "Lato", sans-serif;
-}
-
-.pie2 {
-  margin-bottom: 0;
-  height: 50px;
-  color: #f22222;
-  background-color: #260801;
-  font-family: "Lato", sans-serif;
-}
-
-.iconoSize {
-  font-size: 2rem;
-}
-
-.colorIco {
-  color: #cecdcd;
-}
+@import "reset";
+@import "estilos";
+@import "header";
+@import "footer";
 
 body {
-  background-color: #f22222;
-  display: -ms-grid;
-  display: grid;
-  /*corrige posición del footer siempre abajo*/
-  min-height: 100vh;
-  /*idem*/
-  -ms-grid-rows: auto auto 1fr auto;
-      grid-template-rows: auto auto 1fr auto;
-  /*idem*/
+  background-color: $col-red;
+  display: grid; /*corrige posición del footer siempre abajo*/
+  min-height: 100vh; /*idem*/
+  grid-template-rows: auto auto 1fr auto; /*idem*/
 }
 
 /*---------------------------------------------------------------*/
@@ -129,8 +16,8 @@ body {
 @media only screen and (min-width: 0px) and (max-width: 537px) {
   /*Estilo de los titulos y parrafos*/
   .tituloPrincipal {
-    font-family: "Lato", sans-serif;
-    color: #260801;
+    font-family: $font-titulos;
+    color: $col-brown;
     font-size: 1.8rem;
     font-weight: 700;
     text-align: center;
@@ -138,8 +25,8 @@ body {
     margin-bottom: 0.5rem;
   }
   .tituloSecundario {
-    font-family: "Lato", sans-serif;
-    color: #260801;
+    font-family: $font-titulos;
+    color: $col-brown;
     font-size: 1.4rem;
     font-weight: 600;
     word-spacing: 5px;
@@ -147,23 +34,26 @@ body {
     padding-bottom: 0.5rem;
   }
   .tituloTercero {
-    font-family: "Lato", sans-serif;
+    font-family: $font-titulos;
     font-weight: 500;
     font-size: 1.2rem;
     word-spacing: 2px;
-    color: #260801;
+    color: $col-brown;
   }
+
   p {
-    font-family: "Lato", sans-serif;
+    font-family: $font-parrafo;
     font-weight: 400;
     font-size: 1rem;
     font-style: italic;
-    color: #260801;
+    color: $col-brown;
     text-align: center;
   }
+
   .ajusteParrafo400 {
     max-width: 400px;
   }
+
   /* Imagenes */
   .asideIz {
     width: 100%;
@@ -183,29 +73,29 @@ body {
     background-position: right;
     opacity: 0.5;
   }
+
   .ajusteImagenGr {
     width: 100%;
   }
   .index {
     z-index: 1;
   }
+
   /*Contenedores*/
   .contenedorCentral {
-    background-color: #2947f215;
+    background-color: $col-azul;
     border-radius: 5px;
     height: 100%;
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
+    align-content: space-around;
   }
   .contFotoProduc {
     border: 0.5px solid col-gris-2;
+
     /* amplia fotos de productos 20% con :hover*/
-  }
-  .contFotoProduc:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    -webkit-transition: 1.5s;
-    transition: 1.5s;
+    &:hover {
+      transform: scale(1.1);
+      transition: 1.5s;
+    }
   }
 }
 
@@ -214,10 +104,11 @@ body {
 /*---------------------------------------------------------------*/
 @media only screen and (min-width: 538px) and (max-width: 1023px) {
   /*Barra de navegación*/
+
   /*Estilo de los titulos y parrafos*/
   .tituloPrincipal {
-    font-family: "Lato", sans-serif;
-    color: #260801;
+    font-family: $font-titulos;
+    color: $col-brown;
     font-size: 3rem;
     font-weight: 900;
     text-align: center;
@@ -225,19 +116,19 @@ body {
     margin-bottom: 0.5rem;
   }
   .tituloSecundario {
-    font-family: "Lato", sans-serif;
-    color: #260801;
+    font-family: $font-titulos;
+    color: $col-brown;
     font-size: 2.5rem;
     font-weight: 700;
     word-spacing: 5px;
     margin-bottom: 0.5rem;
   }
   .tituloTercero {
-    font-family: "Lato", sans-serif;
+    font-family: $font-titulos;
     font-weight: 500;
     font-size: 1.3rem;
     word-spacing: 2px;
-    color: #260801;
+    color: $col-brown;
   }
   .ajusteTitulo {
     width: 100%;
@@ -247,16 +138,17 @@ body {
     word-spacing: 5px;
   }
   p {
-    font-family: "Lato", sans-serif;
+    font-family: $font-parrafo;
     font-weight: 400;
     font-size: 1rem;
     font-style: italic;
-    color: #260801;
+    color: $col-brown;
     text-align: center;
   }
   .ajusteParrafo400 {
     max-width: 400px;
   }
+
   /* Imagenes */
   .asideIz {
     width: 100%;
@@ -282,23 +174,22 @@ body {
   .index {
     z-index: 1;
   }
+
   /*Contenedores*/
   .contenedorCentral {
-    background-color: #2947f215;
+    background-color: $col-azul;
     border-radius: 5px;
     height: 100%;
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
+    align-content: space-around;
   }
+
   .contFotoProduc {
-    border: 0.5px solid #cecdcd75;
+    border: 0.5px solid $col-gris-2;
     /* amplia fotos de productos con :hover*/
-  }
-  .contFotoProduc:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    -webkit-transition: 1.5s;
-    transition: 1.5s;
+    &:hover {
+      transform: scale(1.1);
+      transition: 1.5s;
+    }
   }
 }
 
@@ -307,6 +198,7 @@ body {
 /*---------------------------------------------------------------*/
 @media (max-width: 920px) and (orientation: landscape) {
   /*Ajuste Titulos*/
+
   .tituloPrincipal {
     font-size: 2rem;
     font-weight: 700;
@@ -325,44 +217,45 @@ body {
     padding-top: 5px !important;
     margin-bottom: 5px !important;
   }
+
   /*Ajuste de imagenes*/
   .ajusteImagenGr {
     width: 55%;
     /* padding-top: 1rem !important; */
     /* margin-top: 0 !important; */
   }
+
   .paddingProducLand {
     padding: 2px !important;
   }
+
   .imgProducto {
     width: 130px;
     height: 130px;
   }
+
   .imgNos {
     width: 150px;
     height: 150px;
     padding-left: 5px;
     padding-right: 5px;
   }
+
   /*Contenedores*/
   .contenedorCentral {
     width: 80%;
     height: 100%;
   }
+
   /*Ajuste primer contenedor about-us*/
   .ajusteNosLand {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     padding-top: 20x;
     padding-bottom: 15px;
   }
+
   /*Ajuste Videos y mapa*/
   .ajusteRatio {
     width: 60%;
@@ -385,8 +278,8 @@ body {
   }
   /*Estilo de los titulos y parrafos*/
   .tituloPrincipal {
-    font-family: "Lato", sans-serif;
-    color: #260801;
+    font-family: $font-titulos;
+    color: $col-brown;
     font-size: 3.5rem;
     font-weight: 900;
     word-spacing: 5px;
@@ -395,8 +288,8 @@ body {
     margin-bottom: 0.5rem;
   }
   .tituloSecundario {
-    font-family: "Lato", sans-serif;
-    color: #260801;
+    font-family: $font-titulos;
+    color: $col-brown;
     font-size: 3rem;
     font-weight: 700;
     word-spacing: 5px;
@@ -404,11 +297,11 @@ body {
     margin-bottom: 1.5rem;
   }
   .tituloTercero {
-    font-family: "Lato", sans-serif;
+    font-family: $font-titulos;
     font-weight: 500;
     font-size: 1.3rem;
     word-spacing: 2px;
-    color: #260801;
+    color: $col-brown;
   }
   .ajusteTitulo {
     width: 100%;
@@ -416,17 +309,19 @@ body {
     padding-right: 10%;
     word-spacing: 5px;
   }
+
   p {
-    font-family: "Lato", sans-serif;
+    font-family: $font-parrafo;
     font-weight: 400;
     font-size: 1rem;
     font-style: italic;
-    color: #260801;
+    color: $col-brown;
     text-align: center;
   }
   .ajusteParrafo400 {
     max-width: 400px;
   }
+
   /* Imagenes*/
   .asideIz {
     width: 100%;
@@ -452,20 +347,18 @@ body {
   .index {
     z-index: 1;
   }
+
   /*Contenedores*/
   .contenedorCentral {
-    background-color: #2947f215;
+    background-color: $col-azul;
     border-radius: 5px;
   }
   .contFotoProduc {
     border: 0.5px solid col-gris-2;
     /* amplia fotos de productos*/
-  }
-  .contFotoProduc:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    -webkit-transition: 1.5s;
-    transition: 1.5s;
+    &:hover {
+      transform: scale(1.1);
+      transition: 1.5s;
+    }
   }
 }
-/*# sourceMappingURL=style.css.map */

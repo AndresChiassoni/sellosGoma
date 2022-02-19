@@ -1,0 +1,54 @@
+/*Barra de navegación*/
+.mibarra {
+    font-size: 1.2rem;
+    background-color: $col-brown !important;
+    font-family: $font-links;
+    height: 80px;
+    z-index: 10;
+  }
+  .colorFuente {
+    color: $col-gris !important;
+  }
+  /*color menu amburguesa*/
+  .backgroundMenuBar {
+    background-color: $col-back-uno;
+    color: $col-gris;
+  }
+  /*Logo de la empresa*/
+  .imgLogo {
+    width: 60px;
+    height: 60px;
+  }
+  /*cambia de color al precionar puntero */
+  nav {
+    li {
+      &:hover {
+        transform: scale(1.2);
+        transition: 1s;
+      }
+      a {
+        &:active {
+          color: $col-red !important;
+        }
+      }
+    }
+  }
+  /*animación del logo*/
+  .logoAnim {
+    animation-name: movimiento;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    @keyframes movimiento {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    /*pausa animación al pasar el puntero*/
+    &:hover {
+      animation-play-state: paused;
+    }
+  }

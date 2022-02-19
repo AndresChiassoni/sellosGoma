@@ -1,132 +1,73 @@
-@charset "UTF-8";
-/*RESET*/
+/*RESET y Estilos generales---------------------------------*/
 * {
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-decoration: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-/*COLORES*/
-/*FUENTES*/
-/*Barra de navegación*/
-.mibarra {
-  font-size: 1.2rem;
-  background-color: #260801 !important;
-  font-family: "Lato", sans-serif;
-  height: 80px;
-  z-index: 10;
-}
-
-.colorFuente {
-  color: #cecdcd !important;
-}
-
-/*color menu amburguesa*/
-.backgroundMenuBar {
-  background-color: #260801b2;
-  color: #cecdcd;
-}
-
-/*Logo de la empresa*/
-.imgLogo {
-  width: 60px;
-  height: 60px;
-}
-
-/*cambia de color al precionar puntero */
-nav li:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-nav li a:active {
-  color: #f22222 !important;
-}
-
-/*animación del logo*/
-.logoAnim {
-  -webkit-animation-name: movimiento;
-          animation-name: movimiento;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-iteration-count: 2;
-          animation-iteration-count: 2;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  /*pausa animación al pasar el puntero*/
-}
-
-@-webkit-keyframes movimiento {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes movimiento {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-.logoAnim:hover {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-}
-
-/*FOOTER*/
-.pie1 {
-  height: 80px;
-  background-color: #260801d0;
-  font-family: "Lato", sans-serif;
-}
-
-.pie2 {
-  margin-bottom: 0;
-  height: 50px;
-  color: #f22222;
-  background-color: #260801;
-  font-family: "Lato", sans-serif;
-}
-
-.iconoSize {
-  font-size: 2rem;
-}
-
-.colorIco {
-  color: #cecdcd;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #f22222;
-  display: -ms-grid;
-  display: grid;
-  /*corrige posición del footer siempre abajo*/
-  min-height: 100vh;
-  /*idem*/
-  -ms-grid-rows: auto auto 1fr auto;
-      grid-template-rows: auto auto 1fr auto;
-  /*idem*/
+  display: grid; /*corrige posición del footer siempre abajo*/
+  min-height: 100vh; /*idem*/
+  grid-template-rows: auto auto 1fr auto; /*idem*/
 }
 
 /*---------------------------------------------------------------*/
 /*ESTILOS MOBILE*/
 /*---------------------------------------------------------------*/
 @media only screen and (min-width: 0px) and (max-width: 537px) {
+  /*Barra de navegación*/
+  .mibarra {
+    font-size: 1.2rem;
+    background-color: #260801 !important;
+    font-family: "Lato", sans-serif;
+    height: 80px;
+    z-index: 10;
+  }
+  .colorFuente {
+    color: #cecdcd !important;
+  }
+  /*color menu amburguesa*/
+  .backgroundMenuBar {
+    background-color: #260801b2;
+    color: #cecdcd;
+  }
+  /*Logo de la empresa*/
+  .imgLogo {
+    width: 60px;
+    height: 60px;
+  }
+  /*cambia de color al precionar puntero */
+  nav li a:active {
+    color: #f22222 !important;
+  }
+  /*amplia al pasar el mouse*/
+  nav li:hover {
+    transform: scale(1.19);
+    transition: 1s;
+  }
+  /*animación del logo*/
+  .logoAnim {
+    animation-name: movimiento;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+  }
+  @keyframes movimiento {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  /*pausa animación al pasar el puntero*/
+  .logoAnim:hover {
+    animation-play-state: paused;
+  }
+
   /*Estilo de los titulos y parrafos*/
   .tituloPrincipal {
     font-family: "Lato", sans-serif;
@@ -164,6 +105,7 @@ body {
   .ajusteParrafo400 {
     max-width: 400px;
   }
+
   /* Imagenes */
   .asideIz {
     width: 100%;
@@ -189,23 +131,41 @@ body {
   .index {
     z-index: 1;
   }
+
   /*Contenedores*/
   .contenedorCentral {
     background-color: #2947f215;
     border-radius: 5px;
     height: 100%;
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
+    align-content: space-around;
   }
   .contFotoProduc {
-    border: 0.5px solid col-gris-2;
-    /* amplia fotos de productos 20% con :hover*/
+    border: 0.5px solid #cecdcd75;
   }
+  /* amplia fotos de productos 20% con :hover*/
   .contFotoProduc:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    -webkit-transition: 1.5s;
+    transform: scale(1.1);
     transition: 1.5s;
+  }
+
+  /*FOOTER*/
+  .pie1 {
+    height: 80px;
+    background-color: #260801d0;
+    font-family: "Lato", sans-serif;
+  }
+  .pie2 {
+    margin-bottom: 0;
+    height: 50px;
+    color: #f22222;
+    background-color: #260801;
+    font-family: "Lato", sans-serif;
+  }
+  .iconoSize {
+    font-size: 1.5rem;
+  }
+  .colorIco {
+    color: #cecdcd;
   }
 }
 
@@ -214,6 +174,55 @@ body {
 /*---------------------------------------------------------------*/
 @media only screen and (min-width: 538px) and (max-width: 1023px) {
   /*Barra de navegación*/
+  .mibarra {
+    font-size: 1.2rem;
+    background-color: #260801 !important;
+    font-family: "Lato", sans-serif;
+    height: 80px;
+    z-index: 10;
+  }
+  .colorFuente {
+    color: #cecdcd !important;
+  }
+  /*Menú amurguesa*/
+  .backgroundMenuBar {
+    background-color: #260801b2;
+    color: #cecdcd;
+  }
+  /*Logo de la empresa*/
+  .imgLogo {
+    width: 60px;
+    height: 60px;
+  }
+  /*cambia de color al precionar mouse*/
+  nav li a:active {
+    color: #f22222 !important;
+  }
+  /*amplia al pasar el mouse*/
+  nav li:hover {
+    transform: scale(1.19);
+    transition: 1s;
+  }
+  /*Animación del logo*/
+  .logoAnim {
+    animation-name: movimiento;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+  }
+  @keyframes movimiento {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  /*pausa animación al pasar el puntero*/
+  .logoAnim:hover {
+    animation-play-state: paused;
+  }
+
   /*Estilo de los titulos y parrafos*/
   .tituloPrincipal {
     font-family: "Lato", sans-serif;
@@ -257,6 +266,7 @@ body {
   .ajusteParrafo400 {
     max-width: 400px;
   }
+
   /* Imagenes */
   .asideIz {
     width: 100%;
@@ -282,23 +292,43 @@ body {
   .index {
     z-index: 1;
   }
+
   /*Contenedores*/
   .contenedorCentral {
     background-color: #2947f215;
     border-radius: 5px;
     height: 100%;
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
+    align-content: space-around;
   }
+
   .contFotoProduc {
     border: 0.5px solid #cecdcd75;
-    /* amplia fotos de productos con :hover*/
   }
+  /* amplia fotos de productos con :hover*/
   .contFotoProduc:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    -webkit-transition: 1.5s;
+    transform: scale(1.1);
     transition: 1.5s;
+  }
+
+  /*FOOTER*/
+  .pie1 {
+    height: 80px;
+    background-color: #260801d0;
+    font-family: "Lato", sans-serif;
+  }
+  .pie2 {
+    height: 50px;
+    color: #f22222;
+    background-color: #260801;
+    font-family: "Lato", sans-serif;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .iconoSize {
+    font-size: 2.25rem;
+  }
+  .colorIco {
+    color: #cecdcd;
   }
 }
 
@@ -307,6 +337,7 @@ body {
 /*---------------------------------------------------------------*/
 @media (max-width: 920px) and (orientation: landscape) {
   /*Ajuste Titulos*/
+
   .tituloPrincipal {
     font-size: 2rem;
     font-weight: 700;
@@ -325,44 +356,45 @@ body {
     padding-top: 5px !important;
     margin-bottom: 5px !important;
   }
+
   /*Ajuste de imagenes*/
   .ajusteImagenGr {
     width: 55%;
     /* padding-top: 1rem !important; */
     /* margin-top: 0 !important; */
   }
+
   .paddingProducLand {
     padding: 2px !important;
   }
+
   .imgProducto {
     width: 130px;
     height: 130px;
   }
+
   .imgNos {
     width: 150px;
     height: 150px;
     padding-left: 5px;
     padding-right: 5px;
   }
+
   /*Contenedores*/
   .contenedorCentral {
     width: 80%;
     height: 100%;
   }
+
   /*Ajuste primer contenedor about-us*/
   .ajusteNosLand {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     padding-top: 20x;
     padding-bottom: 15px;
   }
+
   /*Ajuste Videos y mapa*/
   .ajusteRatio {
     width: 60%;
@@ -376,6 +408,21 @@ body {
 /*ESTILOS DESKTOP*/
 /*---------------------------------------------------------------*/
 @media only screen and (min-width: 1024px) {
+  /*Barra de navegación*/
+  .mibarra {
+    font-size: 1.2rem;
+    background-color: #260801 !important;
+    font-family: "Lato", sans-serif;
+    height: 80px;
+  }
+  .colorFuente {
+    color: #cecdcd !important;
+  }
+  /*Menú amburguesa*/
+  .backgroundMenuBar {
+    background-color: #260801b2;
+    color: #cecdcd;
+  }
   /*Logo de la empresa*/
   .imgLogo {
     width: 120px;
@@ -383,6 +430,35 @@ body {
     margin-top: 80px;
     margin-left: 10px;
   }
+  /*cambia de color al precionar mouse*/
+  nav li a:active {
+    color: #f22222 !important;
+  }
+  /*amplia al pasar el mouse*/
+  nav li:hover {
+    transform: scale(1.19);
+    transition: 1s;
+  }
+  /*Animación del logo*/
+  .logoAnim {
+    animation-name: movimiento;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+  }
+  @keyframes movimiento {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  /*pausa animación al pasar el puntero*/
+  .logoAnim:hover {
+    animation-play-state: paused;
+  }
+
   /*Estilo de los titulos y parrafos*/
   .tituloPrincipal {
     font-family: "Lato", sans-serif;
@@ -427,6 +503,7 @@ body {
   .ajusteParrafo400 {
     max-width: 400px;
   }
+
   /* Imagenes*/
   .asideIz {
     width: 100%;
@@ -452,20 +529,37 @@ body {
   .index {
     z-index: 1;
   }
+
   /*Contenedores*/
   .contenedorCentral {
     background-color: #2947f215;
     border-radius: 5px;
   }
   .contFotoProduc {
-    border: 0.5px solid col-gris-2;
-    /* amplia fotos de productos*/
+    border: 0.5px solid #cecdcd75;
   }
+  /* amplia fotos de productos*/
   .contFotoProduc:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    -webkit-transition: 1.5s;
+    transform: scale(1.1);
     transition: 1.5s;
   }
+
+  /*FOOTER*/
+  .pie1 {
+    height: 80px;
+    background-color: #260801d0;
+    font-family: "Lato", sans-serif;
+  }
+  .pie2 {
+    height: 50px;
+    color: #f22222;
+    background-color: #260801;
+    font-family: "Lato", sans-serif;
+  }
+  .iconoSize {
+    font-size: 2.25rem;
+  }
+  .colorIco {
+    color: #cecdcd;
+  }
 }
-/*# sourceMappingURL=style.css.map */
