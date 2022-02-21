@@ -10,6 +10,10 @@ body {
   grid-template-rows: auto auto 1fr auto; /*idem*/
 }
 
+.bodyProd {
+  background-color: $col-bg2;
+}
+
 /*---------------------------------------------------------------*/
 /*ESTILOS MOBILE*/
 /*---------------------------------------------------------------*/
