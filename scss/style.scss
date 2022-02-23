@@ -14,6 +14,7 @@ body {
   background-color: $col-bg2;
 }
 
+
 /*---------------------------------------------------------------*/
 /*ESTILOS MOBILE*/
 /*---------------------------------------------------------------*/
@@ -92,15 +93,11 @@ body {
     height: 100%;
     align-content: space-around;
   }
-  .contFotoProduc {
-    border: 0.5px solid col-gris-2;
-
-    /* amplia fotos de productos 20% con :hover*/
-    &:hover {
+  .contFotoProduc:hover{
       transform: scale(1.1);
       transition: 1.5s;
     }
-  }
+  
 }
 
 /*---------------------------------------------------------------*/
@@ -187,14 +184,11 @@ body {
     align-content: space-around;
   }
 
-  .contFotoProduc {
-    border: 0.5px solid $col-gris-2;
-    /* amplia fotos de productos con :hover*/
-    &:hover {
+  .contFotoProduc:hover{
       transform: scale(1.1);
       transition: 1.5s;
     }
-  }
+  
 }
 
 /*---------------------------------------------------------------*/
@@ -348,6 +342,7 @@ body {
   .ajusteImagenGr {
     width: 70%;
   }
+  
   .index {
     z-index: 1;
   }
@@ -357,12 +352,9 @@ body {
     background-color: $col-azul;
     border-radius: 5px;
   }
-  .contFotoProduc {
-    border: 0.5px solid col-gris-2;
-    /* amplia fotos de productos*/
-    &:hover {
+  .contFotoProduc:hover{
       transform: scale(1.1);
       transition: 1.5s;
     }
   }
-}
+
