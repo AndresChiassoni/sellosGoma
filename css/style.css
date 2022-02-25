@@ -184,7 +184,14 @@ body {
     align-content: space-around;
   }
 
-  .contFotoProduc:hover {
+  .imgProducto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #cecdcd;
+    object-fit: cover;
+  }
+  .imgProducto:hover {
     transform: scale(1.1);
     transition: 1.5s;
   }
@@ -280,7 +287,14 @@ body {
     align-content: space-around;
   }
 
-  .contFotoProduc:hover {
+  .imgProducto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 8px solid #cecdcd;
+    object-fit: cover;
+  }
+  .imgProducto:hover {
     transform: scale(1.1);
     transition: 1.5s;
   }
@@ -323,34 +337,35 @@ body {
   }
 
   .imgProducto {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #cecdcd;
+    object-fit: cover;
   }
-
-  .imgNos {
+  
+  .imgProducto:hover {
+    transform: scale(1.1);
+    transition: 1.5s;
+  }
+  .imgProducto .imgNos {
     width: 150px;
     height: 150px;
     padding-left: 5px;
     padding-right: 5px;
   }
-
-  /*Contenedores*/
-  .contenedorCentral {
+  .imgProducto .contenedorCentral {
     width: 80%;
     height: 100%;
   }
-
-  /*Ajuste primer contenedor about-us*/
-  .ajusteNosLand {
+  .imgProducto .ajusteNosLand {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 20x;
     padding-bottom: 15px;
   }
-
-  /*Ajuste Videos y mapa*/
-  .ajusteRatio {
+  .imgProducto .ajusteRatio {
     width: 60%;
     height: auto;
     margin-left: auto;
@@ -367,6 +382,18 @@ body {
     height: 120px;
     margin-top: 80px;
     margin-left: 10px;
+  }
+
+  .imgProducto {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 8px solid #cecdcd;
+    object-fit: cover;
+  }
+  .imgProducto:hover {
+    transform: scale(1.5);
+    transition: 1s;
   }
 
   /*Estilo de los titulos y parrafos*/
@@ -452,11 +479,6 @@ body {
   .contenedorCentral {
     background-color: #2947f215;
     border-radius: 5px;
-  }
-
-  .contFotoProduc:hover {
-    transform: scale(1.1);
-    transition: 1.5s;
   }
 }
 
