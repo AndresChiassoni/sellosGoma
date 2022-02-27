@@ -1,18 +1,18 @@
 /*Barra de navegación*/
 .mibarra {
     font-size: 1.2rem;
-    background-color: $col-brown !important;
+    background-color: map-get($paleta,color-3) !important;
     font-family: $font-links;
     height: 80px;
     z-index: 10;
   }
   .colorFuente {
-    color: $col-gris !important;
+    color: map-get($paleta,color-5) !important;
   }
   /*color menu amburguesa*/
   .backgroundMenuBar {
-    background-color: $col-back-uno;
-    color: $col-gris;
+    background-color:map-get($paleta,color-3-2);
+    color: map-get($paleta,color-5);
   }
   /*Logo de la empresa*/
   .imgLogo {
@@ -28,7 +28,7 @@
       }
       a {
         &:active {
-          color: $col-red !important;
+          color: map-get($paleta,color-1)!important;
         }
       }
     }

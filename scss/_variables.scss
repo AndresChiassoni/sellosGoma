@@ -1,14 +1,18 @@
 
 
-/*COLORES*/
-$col-red: #f22222;
-$col-bg2:#f29f05;
-$col-brown: #260801;
-$col-brown-2:#260801d0;
-$col-back-uno: #260801b2;
-$col-gris:#cecdcd;
-$col-gris-2:#cecdcd75;
-$col-azul:#2947f215;
+/*Paleta de colores*/
+$paleta: (
+  color-1: #f22222,
+  color-2: #f29f05,
+  color-3: #260801,
+  color-3-1: #260801d0,
+  color-3-2: #260801b2,
+  color-4: #2947f2,
+  color-4-1: #2947f215,
+  color-5: #cecdcd,
+  color-5-1: #cecdcd75,
+);
+
 
 /*FUENTES*/
 $font-links:  "Lato", sans-serif;

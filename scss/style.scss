@@ -4,16 +4,16 @@
 @import "footer";
 
 body {
-  background-color: $col-red;
+  background-color:  map-get($paleta,color-1 );
   display: grid; /*corrige posición del footer siempre abajo*/
   min-height: 100vh; /*idem*/
   grid-template-rows: auto auto 1fr auto; /*idem*/
 }
 
-.bodyProd {
-  background-color: $col-bg2;
-}
-
+// .bodyProd {
+  // background-color: $col-red;
+// }
+// 
 /*---------------------------------------------------------------*/
 /*ESTILOS MOBILE*/
 /*---------------------------------------------------------------*/
@@ -21,7 +21,7 @@ body {
   /*Estilo de los titulos y parrafos*/
   .tituloPrincipal {
     font-family: $font-titulos;
-    color: $col-brown;
+    color: map-get($paleta,color-3);
     font-size: 1.8rem;
     font-weight: 700;
     text-align: center;
@@ -30,7 +30,7 @@ body {
   }
   .tituloSecundario {
     font-family: $font-titulos;
-    color: $col-brown;
+    color: map-get($paleta,color-3);
     font-size: 1.4rem;
     font-weight: 600;
     word-spacing: 5px;
@@ -42,7 +42,7 @@ body {
     font-weight: 500;
     font-size: 1.2rem;
     word-spacing: 2px;
-    color: $col-brown;
+    color: map-get($paleta,color-3);
   }
 
   p {
@@ -50,7 +50,7 @@ body {
     font-weight: 400;
     font-size: 1rem;
     font-style: italic;
-    color: $col-brown;
+    color: map-get($paleta,color-3);
     text-align: center;
   }
 
@@ -87,7 +87,7 @@ body {
 
   /*Contenedores*/
   .contenedorCentral {
-    background-color: $col-azul;
+    background-color: map-get($paleta, color-4-1);
     border-radius: 5px;
     height: 100%;
     align-content: space-around;
@@ -97,7 +97,7 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 4px solid $col-gris;
+    border: 4px solid map-get($paleta, color-5);
     object-fit: cover;
     &:hover {
       transform: scale(1.1);
@@ -115,7 +115,7 @@ body {
   /*Estilo de los titulos y parrafos*/
   .tituloPrincipal {
     font-family: $font-titulos;
-    color: $col-brown;
+    color:  map-get($paleta,color-3);
     font-size: 3rem;
     font-weight: 900;
     text-align: center;
@@ -124,7 +124,7 @@ body {
   }
   .tituloSecundario {
     font-family: $font-titulos;
-    color: $col-brown;
+    color:  map-get($paleta,color-3);
     font-size: 2.5rem;
     font-weight: 700;
     word-spacing: 5px;
@@ -135,7 +135,7 @@ body {
     font-weight: 500;
     font-size: 1.3rem;
     word-spacing: 2px;
-    color: $col-brown;
+    color:  map-get($paleta,color-3);
   }
   .ajusteTitulo {
     width: 100%;
@@ -149,7 +149,7 @@ body {
     font-weight: 400;
     font-size: 1rem;
     font-style: italic;
-    color: $col-brown;
+    color:  map-get($paleta,color-3);
     text-align: center;
   }
   .ajusteParrafo400 {
@@ -184,7 +184,7 @@ body {
 
   /*Contenedores*/
   .contenedorCentral {
-    background-color: $col-azul;
+    background-color: map-get($paleta, color-4-1);
     border-radius: 5px;
     height: 100%;
     align-content: space-around;
@@ -193,7 +193,7 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 8px solid $col-gris;
+    border: 8px solid map-get($paleta, color-5);
     object-fit: cover;
     &:hover {
       transform: scale(1.1);
@@ -242,7 +242,7 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 4px solid $col-gris;
+    border: 4px solid map-get($paleta, color-5);
     object-fit: cover;
     &:hover {
       transform: scale(1.1);
@@ -297,7 +297,7 @@ body {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    border: 8px solid $col-gris;
+    border: 8px solid map-get($paleta, color-5);
     object-fit: cover;
 
     &:hover {
@@ -309,7 +309,7 @@ body {
   /*Estilo de los titulos y parrafos*/
   .tituloPrincipal {
     font-family: $font-titulos;
-    color: $col-brown;
+    color:  map-get($paleta,color-3);
     font-size: 3.5rem;
     font-weight: 900;
     word-spacing: 5px;
@@ -319,7 +319,7 @@ body {
   }
   .tituloSecundario {
     font-family: $font-titulos;
-    color: $col-brown;
+    color:  map-get($paleta,color-3);
     font-size: 3rem;
     font-weight: 700;
     word-spacing: 5px;
@@ -331,7 +331,7 @@ body {
     font-weight: 500;
     font-size: 1.3rem;
     word-spacing: 2px;
-    color: $col-brown;
+    color:  map-get($paleta,color-3);
   }
   .ajusteTitulo {
     width: 100%;
@@ -345,7 +345,7 @@ body {
     font-weight: 400;
     font-size: 1rem;
     font-style: italic;
-    color: $col-brown;
+    color:  map-get($paleta,color-3);
     text-align: center;
   }
   .ajusteParrafo400 {
@@ -381,14 +381,7 @@ body {
 
   /*Contenedores*/
   .contenedorCentral {
-    background-color: $col-azul;
+    background-color: map-get($paleta, color-4-1);
     border-radius: 5px;
   }
-  // .contFotoProduc{
-  // width: 300px;
-  // height: 300px;
-  // border-radius: 50%;
-  //
-  //
-  // }
 }

@@ -1,19 +1,19 @@
 /*FOOTER*/
 .pie1 {
   height: 80px;
-  background-color: $col-brown-2;
+  background-color: map-get($paleta,color-3-1);
   font-family: $font-links;
 }
 .pie2 {
   margin-bottom: 0;
   height: 50px;
-  color: $col-red;
-  background-color: $col-brown;
+  color: map-get($paleta,color-1);
+  background-color: map-get($paleta,color-3);
   font-family: $font-links;
 }
 .iconoSize {
   font-size: 2rem;
 }
 .colorIco {
-  color: $col-gris;
+  color: map-get($paleta,color-5);
 }
