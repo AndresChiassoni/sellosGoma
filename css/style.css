@@ -87,6 +87,30 @@ nav li a:active {
   color: #cecdcd;
 }
 
+.boton, .boton--borrar, .boton--aceptar {
+  display: flex;
+  width: 80px;
+  height: 40px;
+  background-color: #f29f05;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+  color: #260801;
+  border-radius: 5px;
+  font: "Lato", sans-serif;
+}
+
+.boton--aceptar {
+  background-color: #f29f05;
+  color: #260801;
+}
+
+.boton--borrar {
+  background-color: #f22222;
+  color: #260801;
+}
+
 body {
   background-color: #f22222;
   display: grid;
