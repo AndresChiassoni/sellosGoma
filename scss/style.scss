@@ -12,7 +12,7 @@ body {
 }
 
 /*MIXIN Solo usado en VISTA DESKTOP*/
-@mixin titulo ($tam-fuente, $grosor){
+@mixin titulo($tam-fuente, $grosor) {
   font-family: $font-titulos;
   color: map-get($paleta, color-3);
   font-size: $tam-fuente;
