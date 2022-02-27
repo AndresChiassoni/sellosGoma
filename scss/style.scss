@@ -4,12 +4,22 @@
 @import "footer";
 @import "botones";
 
-
 body {
-  background-color:  map-get($paleta,color-1 );
+  background-color: map-get($paleta, color-1);
   display: grid; /*corrige posición del footer siempre abajo*/
   min-height: 100vh; /*idem*/
   grid-template-rows: auto auto 1fr auto; /*idem*/
+}
+
+/*MIXIN Solo usado en VISTA DESKTOP*/
+@mixin titulo ($tam-fuente, $grosor){
+  font-family: $font-titulos;
+  color: map-get($paleta, color-3);
+  font-size: $tam-fuente;
+  word-spacing: 5px;
+  margin-bottom: 0.3rem;
+  margin-top: 0.5rem;
+  font-weight: $grosor;
 }
 
 /*---------------------------------------------------------------*/
@@ -19,7 +29,7 @@ body {
   /*Estilo de los titulos y parrafos*/
   .tituloPrincipal {
     font-family: $font-titulos;
-    color: map-get($paleta,color-3);
+    color: map-get($paleta, color-3);
     font-size: 1.8rem;
     font-weight: 700;
     text-align: center;
@@ -28,7 +38,7 @@ body {
   }
   .tituloSecundario {
     font-family: $font-titulos;
-    color: map-get($paleta,color-3);
+    color: map-get($paleta, color-3);
     font-size: 1.4rem;
     font-weight: 600;
     word-spacing: 5px;
@@ -40,7 +50,7 @@ body {
     font-weight: 500;
     font-size: 1.2rem;
     word-spacing: 2px;
-    color: map-get($paleta,color-3);
+    color: map-get($paleta, color-3);
   }
 
   p {
@@ -48,7 +58,7 @@ body {
     font-weight: 400;
     font-size: 1rem;
     font-style: italic;
-    color: map-get($paleta,color-3);
+    color: map-get($paleta, color-3);
     text-align: center;
   }
 
@@ -113,7 +123,7 @@ body {
   /*Estilo de los titulos y parrafos*/
   .tituloPrincipal {
     font-family: $font-titulos;
-    color:  map-get($paleta,color-3);
+    color: map-get($paleta, color-3);
     font-size: 3rem;
     font-weight: 900;
     text-align: center;
@@ -122,7 +132,7 @@ body {
   }
   .tituloSecundario {
     font-family: $font-titulos;
-    color:  map-get($paleta,color-3);
+    color: map-get($paleta, color-3);
     font-size: 2.5rem;
     font-weight: 700;
     word-spacing: 5px;
@@ -133,7 +143,7 @@ body {
     font-weight: 500;
     font-size: 1.3rem;
     word-spacing: 2px;
-    color:  map-get($paleta,color-3);
+    color: map-get($paleta, color-3);
   }
   .ajusteTitulo {
     width: 100%;
@@ -147,7 +157,7 @@ body {
     font-weight: 400;
     font-size: 1rem;
     font-style: italic;
-    color:  map-get($paleta,color-3);
+    color: map-get($paleta, color-3);
     text-align: center;
   }
   .ajusteParrafo400 {
@@ -300,50 +310,37 @@ body {
 
     &:hover {
       transform: scale(1.5);
-      transition: 1.0s;
+      transition: 1s;
     }
   }
 
   /*Estilo de los titulos y parrafos*/
   .tituloPrincipal {
-    font-family: $font-titulos;
-    color:  map-get($paleta,color-3);
-    font-size: 3.5rem;
-    font-weight: 900;
-    word-spacing: 5px;
+    @include titulo(3.5rem, 900);
     text-align: center;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
   }
+
   .tituloSecundario {
-    font-family: $font-titulos;
-    color:  map-get($paleta,color-3);
-    font-size: 3rem;
-    font-weight: 700;
-    word-spacing: 5px;
-    margin-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
+    @include titulo(3rem, 700);
   }
+
   .tituloTercero {
-    font-family: $font-titulos;
-    font-weight: 500;
-    font-size: 1.3rem;
+    @include titulo(1.3rem, 500);
     word-spacing: 2px;
-    color:  map-get($paleta,color-3);
   }
+
   .ajusteTitulo {
     width: 100%;
     text-align: right;
     padding-right: 10%;
     word-spacing: 5px;
   }
-
   p {
     font-family: $font-parrafo;
     font-weight: 400;
     font-size: 1rem;
     font-style: italic;
-    color:  map-get($paleta,color-3);
+    color: map-get($paleta, color-3);
     text-align: center;
   }
   .ajusteParrafo400 {

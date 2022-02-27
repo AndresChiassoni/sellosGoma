@@ -99,6 +99,13 @@ nav li a:active {
   color: #260801;
   border-radius: 5px;
   font: "Lato", sans-serif;
+  border: 1px solid #cecdcd75;
+  box-shadow: 2px 2px 2px 1px #260801;
+}
+.boton:hover, .boton--borrar:hover, .boton--aceptar:hover {
+  color: #cecdcd;
+  background-color: #260801;
+  border: 1px solid #260801;
 }
 
 .boton--aceptar {
@@ -121,6 +128,7 @@ body {
   /*idem*/
 }
 
+/*MIXIN Solo usado en VISTA DESKTOP*/
 /*---------------------------------------------------------------*/
 /*ESTILOS MOBILE*/
 /*---------------------------------------------------------------*/
@@ -423,29 +431,32 @@ body {
     font-family: "Lato", sans-serif;
     color: #260801;
     font-size: 3.5rem;
-    font-weight: 900;
     word-spacing: 5px;
+    margin-bottom: 0.3rem;
+    margin-top: 0.5rem;
+    font-weight: 900;
     text-align: center;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
   }
 
   .tituloSecundario {
     font-family: "Lato", sans-serif;
     color: #260801;
     font-size: 3rem;
-    font-weight: 700;
     word-spacing: 5px;
-    margin-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.3rem;
+    margin-top: 0.5rem;
+    font-weight: 700;
   }
 
   .tituloTercero {
     font-family: "Lato", sans-serif;
-    font-weight: 500;
-    font-size: 1.3rem;
-    word-spacing: 2px;
     color: #260801;
+    font-size: 1.3rem;
+    word-spacing: 5px;
+    margin-bottom: 0.3rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    word-spacing: 2px;
   }
 
   .ajusteTitulo {

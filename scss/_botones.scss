@@ -10,6 +10,14 @@
   color: map-get($paleta, color-3);
   border-radius: 5px;
   font: $font-links;
+  border: 1px solid map-get($paleta, color-5-1); 
+  box-shadow: 2px 2px 2px 1px map-get($paleta, color-3);
+
+   &:hover{
+       color: map-get($paleta, color-5);
+       background-color: map-get($paleta, color-3);
+       border: 1px solid map-get($paleta, color-3); 
+   }
 }
 
 .boton--aceptar {
