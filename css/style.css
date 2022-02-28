@@ -36,11 +36,7 @@
 }
 
 /*cambia de color al precionar puntero */
-nav li:hover {
-  transform: scale(1.2);
-  transition: 1s;
-}
-nav li a:active {
+nav li a:hover {
   color: #f22222 !important;
 }
 
@@ -91,7 +87,7 @@ nav li a:active {
   display: flex;
   width: 80px;
   height: 40px;
-  background-color: #f29f05;
+  background-color: #cecdcd;
   text-align: center;
   justify-content: center;
   text-decoration: none;
@@ -109,15 +105,16 @@ nav li a:active {
 }
 
 .boton--aceptar {
-  background-color: #f29f05;
+  background-color: #cecdcd;
   color: #260801;
 }
 
 .boton--borrar {
-  background-color: #f22222;
+  background-color: #2947f215;
   color: #260801;
 }
 
+/*Formato general del body*/
 body {
   background-color: #f22222;
   display: grid;
@@ -128,7 +125,7 @@ body {
   /*idem*/
 }
 
-/*MIXIN Solo usado en VISTA DESKTOP*/
+/*MIXIN Solo usado en VISTA DESKTOP para formato de títulos*/
 /*---------------------------------------------------------------*/
 /*ESTILOS MOBILE*/
 /*---------------------------------------------------------------*/
@@ -228,7 +225,6 @@ body {
 /*ESTILOS TABLET*/
 /*---------------------------------------------------------------*/
 @media only screen and (min-width: 538px) and (max-width: 1023px) {
-  /*Barra de navegación*/
   /*Estilo de los titulos y parrafos*/
   .tituloPrincipal {
     font-family: "Lato", sans-serif;
@@ -356,8 +352,6 @@ body {
   /*Ajuste de imagenes*/
   .ajusteImagenGr {
     width: 55%;
-    /* padding-top: 1rem !important; */
-    /* margin-top: 0 !important; */
   }
 
   .paddingProducLand {

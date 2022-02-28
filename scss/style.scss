@@ -4,6 +4,8 @@
 @import "footer";
 @import "botones";
 
+
+/*Formato general del body*/
 body {
   background-color: map-get($paleta, color-1);
   display: grid; /*corrige posición del footer siempre abajo*/
@@ -11,7 +13,7 @@ body {
   grid-template-rows: auto auto 1fr auto; /*idem*/
 }
 
-/*MIXIN Solo usado en VISTA DESKTOP*/
+/*MIXIN Solo usado en VISTA DESKTOP para formato de títulos*/
 @mixin titulo($tam-fuente, $grosor) {
   font-family: $font-titulos;
   color: map-get($paleta, color-3);
@@ -118,7 +120,6 @@ body {
 /*ESTILOS TABLET*/
 /*---------------------------------------------------------------*/
 @media only screen and (min-width: 538px) and (max-width: 1023px) {
-  /*Barra de navegación*/
 
   /*Estilo de los titulos y parrafos*/
   .tituloPrincipal {
@@ -214,8 +215,8 @@ body {
 /*ESTILOS MOBILE/TABLET LANSCAPE*/
 /*---------------------------------------------------------------*/
 @media (max-width: 920px) and (orientation: landscape) {
+ 
   /*Ajuste Titulos*/
-
   .tituloPrincipal {
     font-size: 2rem;
     font-weight: 700;
@@ -238,8 +239,6 @@ body {
   /*Ajuste de imagenes*/
   .ajusteImagenGr {
     width: 55%;
-    /* padding-top: 1rem !important; */
-    /* margin-top: 0 !important; */
   }
 
   .paddingProducLand {
