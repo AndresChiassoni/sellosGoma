@@ -7,7 +7,7 @@
 
 /*Formato general del body*/
 body {
-  background-color: map-get($paleta, color-1);
+  background-color: map-get($paleta, color-5-1);
   display: grid; /*corrige posición del footer siempre abajo*/
   min-height: 100vh; /*idem*/
   grid-template-rows: auto auto 1fr auto; /*idem*/

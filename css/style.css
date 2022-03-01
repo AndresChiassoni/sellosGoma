@@ -60,10 +60,14 @@ nav li a:hover {
   animation-play-state: paused;
 }
 
+.colorIcoNav {
+  color: #cecdcd !important;
+}
+
 /*FOOTER*/
 .pie1 {
   height: 80px;
-  background-color: #260801d0;
+  background-color: #cecdcd;
   font-family: "Lato", sans-serif;
 }
 
@@ -80,14 +84,14 @@ nav li a:hover {
 }
 
 .colorIco {
-  color: #cecdcd;
+  color: #260801;
 }
 
 .boton, .boton--borrar, .boton--aceptar {
   display: flex;
   width: 80px;
   height: 40px;
-  background-color: #cecdcd;
+  background-color: #f29f05;
   text-align: center;
   justify-content: center;
   text-decoration: none;
@@ -105,18 +109,18 @@ nav li a:hover {
 }
 
 .boton--aceptar {
-  background-color: #cecdcd;
+  background-color: #f29f05;
   color: #260801;
 }
 
 .boton--borrar {
-  background-color: #2947f215;
+  background-color: #f22222;
   color: #260801;
 }
 
 /*Formato general del body*/
 body {
-  background-color: #f22222;
+  background-color: #cecdcd75;
   display: grid;
   /*corrige posición del footer siempre abajo*/
   min-height: 100vh;

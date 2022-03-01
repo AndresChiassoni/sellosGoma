@@ -2,7 +2,7 @@
   display: flex;
   width: 80px;
   height: 40px;
-  background-color: map-get($paleta, color-5);
+  background-color: map-get($paleta, color-2);
   text-align: center;
   justify-content: center;
   text-decoration: none;
@@ -22,12 +22,12 @@
 
 .boton--aceptar {
   @extend .boton;
-  background-color: map-get($paleta, color-5);
+  background-color: map-get($paleta, color-2);
   color: map-get($paleta, color-3);
 }
 
 .boton--borrar {
   @extend .boton;
-  background-color: map-get($paleta, color-4-1);
+  background-color: map-get($paleta, color-1);
   color: map-get($paleta, color-3);
 }

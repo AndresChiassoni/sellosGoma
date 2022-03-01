@@ -46,3 +46,6 @@ nav {
     animation-play-state: paused;
   }
 }
+.colorIcoNav{
+  color: map-get($paleta, color-5) !important;
+}
