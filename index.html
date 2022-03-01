@@ -113,21 +113,107 @@
 
     <!-- Area Central de la Página -->
 
+    <!-- CONTENEDOR PRINCIPAL -->
     <main class="container-fluid">
       <div class="row">
         <div class="col-1 p-2">
           <div class="asideIz"></div>
         </div>
         <div class="col-10 d-flex justify-content-center p-2">
-          <div class="row-cols text-center contenedorCentral">
-            <div class="col-12">
-              <!-- Imagen de portada -->
-              <img
-                class="ajusteImagenGr img-fluid pt-5 pb-5"
-                src="./assets/images/portadaColage.jpg"
-                alt="sello en la oficina"
-              />
+          <!-- CONTENEDOR DEL CARRUSEL -->
+          <div class="row text-center contenedorCentral">
+            <div class="col-0 col-sm-1 col-md-2 col-lg-2"></div>
+            <div class="col-12 col-sm-10 col-md-8 col-lg-8 pt-4 pb-5">
+              <div
+                id="carouselExampleDark"
+                class="carousel carousel-dark slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="5000">
+                    <img
+                      src="./assets/images/slaider/img-5-sl.jpg"
+                      class="d-block w-100"
+                      alt="Oficina"
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                      src="./assets/images/slaider/img-6-sl.jpg"
+                      class="d-block w-100"
+                      alt="Oficina"
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                      src="./assets/images/slaider/img-7-sl.jpg"
+                      class="d-block w-100"
+                      alt="Oficina"
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                      src="./assets/images/slaider/img-8-sl.jpg"
+                      class="d-block w-100"
+                      alt="Oficina"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             </div>
+            <div class="col-0 col-sm-1 col-md-2 col-lg-2"></div>
             <div class="col-12">
               <!-- titulo secundario -->
               <h2 class="tituloSecundario">Ideales para profesionales</h2>
